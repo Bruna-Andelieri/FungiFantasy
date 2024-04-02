@@ -57,21 +57,20 @@ def checkout(request):
                 Please double check your information.')
     else:
         cart = request.session.get('cart', {})
+        if not cart:
+            messages.error(request, "There's nothing in your cart at the moment")
+            return redirect(reverse('product'))
 
-    if not cart:
-        messages.error(request, "There's nothing in your cart at the moment")
-        return redirect(reverse('product'))
+        current_cart= cart_contents(request)
+        total = current_cart['grand_total']
+        stripe_total = round(total * 100)
+        stripe.api_key = stripe_secret_key
+        intent = stripe.PaymentIntent.create(
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
+        )
 
-    current_cart= cart_contents(request)
-    total = current_cart['grand_total']
-    stripe_total = round(total * 100)
-    stripe.api_key = stripe_secret_key
-    intent = stripe.PaymentIntent.create(
-        amount=stripe_total,
-        currency=settings.STRIPE_CURRENCY,
-    )
-
-    order_form = OrderForm()
+        order_form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -97,8 +96,8 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    if 'bag' in request.session:
-        del request.session['bag']
+    if 'cart' in request.session:
+        del request.session['cart']
 
     template = 'checkout/checkout_success.html'
     context = {
