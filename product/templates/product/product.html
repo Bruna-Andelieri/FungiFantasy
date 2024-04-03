@@ -37,12 +37,12 @@
                             {% if search_term or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'product' %}">Products Home</a> | </span>
                             {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                            {{ product|length }} Product{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    {% for product in products %}
+                    {% for product in product %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
