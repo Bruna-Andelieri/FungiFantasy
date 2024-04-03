@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product
+from .forms import ProductForm
+
 from django.db.models.functions import Lower
 
 # Create your views here.
@@ -9,7 +11,7 @@ from django.db.models.functions import Lower
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    product = Product.objects.all()
     query = None
     sort = None
     direction = None
@@ -21,27 +23,27 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
+                product = product.annotate(lower_name=Lower('name'))
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+            product = product.order_by(sortkey)
 
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
+                return redirect(reverse('product'))
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
+            product = product.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
     
     context = {
-        'products': products,
+        'product': product,
         'search_term': query,
         'current_sorting': current_sorting,
     }
@@ -58,3 +60,13 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'product/product_detail.html', context)
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'product/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
