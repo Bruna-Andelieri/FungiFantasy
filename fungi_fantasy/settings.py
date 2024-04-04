@@ -24,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+#'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['fungi-fantasy-4819ad1964c1.herokuapp.com', 'localhost']
 
