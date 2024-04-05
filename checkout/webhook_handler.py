@@ -1,3 +1,5 @@
+#cuidar para nao alterar a funcao handle_payment_intent_succeeded
+
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
@@ -7,10 +9,10 @@ from .models import Order, OrderLineItem
 from product.models import Product
 from profiles.models import UserProfile
 
+import stripe
 import json
 import time
 
-import stripe
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
