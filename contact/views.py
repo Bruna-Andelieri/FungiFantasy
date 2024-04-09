@@ -1,19 +1,24 @@
 
-# Create your views here.
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Contact
-from django.http import HttpResponse
-
+# Create your views here.
 def index(request):
-    if request.method=="POST":
-        contact=Contact()
-        name=request.POST.get('name')
-        email=request.POST.get('email')
-        textarea=request.POST.get('textarea')
-        contact.name=name
-        contact.email=email
-        contact.textarea=textarea
-        contact.save()
-        return HttpResponse("<h1>Thanks for contact us!</h1>")
-
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        textarea = request.POST.get('textarea')
+        
+        # Verifica se todos os campos obrigatórios foram preenchidos
+        if name and email and textarea:
+            # Cria e salva o objeto Contact no banco de dados
+            contact = Contact.objects.create(name=name, email=email, textarea=textarea)
+            # Redireciona para a página de sucesso
+            return redirect('success')
+        else:
+            # Se algum campo estiver em branco, exibe uma mensagem de erro
+            return render(request, 'contact.html', {'error_message': 'Please fill in all required fields.'})
+    
     return render(request, 'contact.html')
+
+def success(request):
+    return render(request, 'contact_success.html')
