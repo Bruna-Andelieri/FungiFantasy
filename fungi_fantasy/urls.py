@@ -29,6 +29,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
     path('wishlist/', include('wishlist.urls')),
+    path('review/', include('review.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'fungi_fantasy.views.handler404'

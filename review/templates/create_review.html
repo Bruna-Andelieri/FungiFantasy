@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Add a review{% endblock %}
+
+{% block extra_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'review/css/review.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="container py-5" id="create-review-section">
+  <h1 class="h1">Add a review</h1>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <form method="POST" action="{% url 'create_review' product.id %}" class="form mb-2">
+        {% csrf_token %}
+        {% for field in form %}
+        {% if field.name == 'rating' %}
+        <div class="form-group">
+          <label for="{{ field.id_for_label }}">Rating *</label>
+          <div class="rating mb-3">
+            <i class="fa-regular fa-star fa-xl" data-value="1"></i>
+            <i class="fa-regular fa-star fa-xl" data-value="2"></i>
+            <i class="fa-regular fa-star fa-xl" data-value="3"></i>
+            <i class="fa-regular fa-star fa-xl" data-value="4"></i>
+            <i class="fa-regular fa-star fa-xl" data-value="5"></i>
+            <input type="hidden" name="rating" id="rating">
+          </div>
+          {% else %}
+          {{ field|as_crispy_field }}
+          {% endif %}
+          {% endfor %}
+          <div class="text-right">
+            <a class="btn btn-outline-primary" href="{% url 'product_detail' product.id %}">Cancel</a>
+            <button class="btn btn-primary" type="submit">Add review</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block post_load_js %}
+{{ block.super }}
+{% endblock %}
