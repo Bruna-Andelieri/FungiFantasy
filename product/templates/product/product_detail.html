@@ -28,6 +28,13 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
+                    <div class="my-2">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'add_to_wishlist' product.id %}" class="wishlist-btn p-2" data-product-id="{{ product.id }}">
+                            Add to Wishlist<i class="fas fa-heart mx-2"></i>
+                        </a>
+                        {% endif %}
+                    </div>
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                     {% if request.user.is_superuser %}
