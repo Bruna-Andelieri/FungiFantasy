@@ -58,7 +58,12 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    product_reviews = Review.objects.filter(product=product, user=request.user)
+    product_reviews_exists = Review.objects.filter(product=product, user=request.user).exists()
+    if product_reviews_exists:
+        product_reviews = Review.objects.filter(product=product, user=request.user)
+    else:
+        product_reviews = []
+    
 
     context = {
         'product': product, 'product_reviews': product_reviews
