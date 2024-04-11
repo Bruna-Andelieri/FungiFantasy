@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load helper_tags %}
+
 
 {% block title %}Edit review{% endblock %}
 
@@ -21,10 +21,12 @@
         <div class="form-group">
           <label for="{{ field.id_for_label }}">Rating *</label>
           <div class="rating mb-3">
-            {% for i in 5|get_range %}
+            {% for _ in "12345" %}
+            {% if forloop.counter <= review.rating %}
             <i class="fa-{% if review.rating < i|add:1 %}regular{% else %}solid{% endif %} fa-star fa-xl"
               data-value="{{ i|add:1 }}"></i>
-            {% endfor %}
+              {% endif %}
+              {% endfor %}
             <input type="hidden" name="rating" id="rating" value="{{review.rating}}">
           </div>
           {% else %}

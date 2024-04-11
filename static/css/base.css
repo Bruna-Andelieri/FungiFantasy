@@ -163,6 +163,17 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/*Mailchimp*/
+#mc_embed_signup {
+    background:#fff;
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+    width: 600px;}
+
+.mc-field-group , .indicates-required {
+    color: #000;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

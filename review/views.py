@@ -14,11 +14,19 @@ from .forms import ReviewForm
 def create_review(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     user = UserProfile.objects.get(user=request.user)
+    orders =  user.orders.all()
 
-    orders = user.orders.all() or []   
+    request_user = request.user
+    
+
+    if not orders:
+        messages.error(
+            request, "You must have purchased this product to review it.")
+        return redirect('product_detail', item_id)
+
     product_purchased = False
     for order in orders:
-        for item in order.line_items.all():
+        for item in order.lineitems.all():
             if item.product == product:
                 product_purchased = True
                 break
@@ -28,7 +36,7 @@ def create_review(request, item_id):
             request, "You must have purchased this product to review it.")
         return redirect('product_detail', item_id)
 
-    review_exists = Review.objects.filter(product=product, user=user).exists()
+    review_exists = Review.objects.filter(product=product, user=request_user).exists()
 
     if review_exists:
         messages.error(
@@ -43,7 +51,7 @@ def create_review(request, item_id):
         rating = request.POST['rating']
         review = Review(
             product=product,
-            user=user,
+            user=request_user,
             title=title,
             text=text,
             rating=rating
@@ -58,7 +66,7 @@ def create_review(request, item_id):
         'form': form,
     }
 
-    return render(request, 'review/create_review.html', context)
+    return render(request, 'create_review.html', context)
 
 
 @login_required
@@ -89,7 +97,7 @@ def edit_review(request, review_id):
         'review': review,
     }
 
-    return render(request, 'review/edit_review.html', context)
+    return render(request, 'edit_review.html', context)
 
 
 @login_required
