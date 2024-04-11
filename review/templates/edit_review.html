@@ -6,7 +6,6 @@
 
 {% block extra_css %}
 {{ block.super }}
-<link rel="stylesheet" href="{% static 'review/css/review.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -21,11 +20,10 @@
         <div class="form-group">
           <label for="{{ field.id_for_label }}">Rating *</label>
           <div class="rating mb-3">
-            {% for _ in "12345" %}
-            {% if forloop.counter <= review.rating %}
+            {% for i in "01234" %}
+
             <i class="fa-{% if review.rating < i|add:1 %}regular{% else %}solid{% endif %} fa-star fa-xl"
               data-value="{{ i|add:1 }}"></i>
-              {% endif %}
               {% endfor %}
             <input type="hidden" name="rating" id="rating" value="{{review.rating}}">
           </div>
