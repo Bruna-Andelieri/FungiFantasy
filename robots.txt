@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /profiles/
+Sitemap: https://fungi-fantasy-4819ad1964c1.herokuapp.com/sitemap.xml
