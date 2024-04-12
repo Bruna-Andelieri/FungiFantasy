@@ -48,7 +48,7 @@ def create_review(request, item_id):
     if request.method == 'POST':
         title = request.POST['title']
         text = request.POST['text']
-        rating = request.POST['rating']
+        rating = request.POST['rating'] or 0
         review = Review(
             product=product,
             user=request_user,

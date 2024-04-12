@@ -1,3 +1,11 @@
+:root {
+    --border-radius: 25px;
+    --black: black;
+    --green: rgb(66, 81, 38);
+    --purple: rgb(127, 12, 156);
+  }
+
+
 html {
     height: 100%;
 }
@@ -35,13 +43,55 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important;
-    border: 1px solid black;
+    color: var(--purple) !important;
+    border: 2px solid var(--purple) !important;
+}
+
+
+.btn-outline-black:hover {
+    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
+    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
+    box-shadow: 0px 0px 21px -5px var(--purple);
+    color: var(--purple) !important;
+    border: 2px solid var(--purple) !important;
+}
+
+.btn-outline-primary, .btn-black, .btn-outline-black {
+    border-radius: var(--border-radius);
 }
 
 .btn-black {
-    background: black;
+    background: var(--purple);
+    border: 2px solid var(--purple);
     color: white;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.link-green {
+    text-decoration: none  !important;
+    border: 1px solid white !important;
+    color: var(--purple) !important;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+
+.link-green:hover {
+    border: 1px solid var(--purple) !important;
+    border-radius: var(--border-radius);
+    color: var(--purple) !important;
+
+}
+
+
+.btn-black:hover {
+    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
+    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
+    box-shadow: 0px 0px 21px -5px var(--purple);
+    border: 2px solid var(--purple);
+    background-color: white !important;
+    color: var(--purple) !important;
 }
 
 .shop-now-button:hover,
@@ -174,14 +224,6 @@ input[name='q']::placeholder {
     color: #000;
 }
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
 
 /* Allauth form formatting */
 
@@ -191,9 +233,16 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+    border-color: var(--purple);
+    border-radius: var(--border-radius);
 }
+
+
+.allauth-form-inner-content textarea  {
+    border-color: var(--purple);
+    border-radius: var(--border-radius);
+}
+
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
@@ -220,7 +269,7 @@ input[name='q']::placeholder {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: var(--border-radius);
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -229,8 +278,9 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: var(--purple);
+    border-color: var(--purple);
+    opacity: 0.6;
 }
 
 .allauth-form-inner-content a {
@@ -255,14 +305,38 @@ input[name='q']::placeholder {
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius: 0;
+    border-radius: var(--border-radius);
     border-color: #dc3545;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
     border-color: #dc3545;
-    border-radius: 0;
+    border-radius: var(--border-radius);
+}
+
+.review {
+    color: var(--green) !important;
+    border: 2px solid var(--green);
+    border-radius: var(--border-radius);
+    opacity: 0.6;
+  transition: 0.3s;
+}
+
+.review:hover {
+    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
+    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
+    box-shadow: 0px 0px 21px -5px var(--purple);
+    border: 2px solid var(--purple);
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /* fixed top navbar only on medium and up */
@@ -311,13 +385,13 @@ input[name='q']::placeholder {
     font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-black,
+    .btn.btn-black {
     padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-black.btn-lg,
+    .btn.btn-black.btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;
     }

@@ -1,12 +1,12 @@
 <div class="reviews-container mt-5">
     <div class="d-flex justify-content-between align-items-center reviews-title-container">
         <h3 class="h3">Reviews</h3>
-        <a href="{% url 'create_review' product.id %}" class="btn btn-primary btn-sm">Add a review</a>
+        <a href="{% url 'create_review' product.id %}" class="btn btn-black btn-sm">Add a review</a>
     </div>
     {% if reviews %}
-    <div class="reviews">
+    <div>
         {% for review in reviews %}
-        <div class=" mt-3 bg-dark text-light p-4 review-card">
+        <div class=" mt-3 p-4 review">
             <div class="review-header d-flex flex-column flex-md-row justify-content-between">
                 <h5 class="h5">{{ review.title }}</h5>
                 <div class="reviews__stars">
@@ -25,9 +25,9 @@
                     <div class="ml-3 profile-actions">
                         <p class="m-0">{{ review.user.first_name }} {{ review.user.last_name|slice:":1" }}</p>
                         {% if request.user == review.user %}
-                        <a href="{% url 'edit_review' review.id %}" class="text-light review-action-link">Edit</a> |
+                        <a href="{% url 'edit_review' review.id %}" class="link-green p-2">Edit</a>
                         <a href="{% url 'delete_review' review.id %}"
-                            class="text-light delete-link review-action-link">Delete</a>
+                            class="link-green p-2">Delete</a>
                         {% endif %}
                     </div>
                 </div>
