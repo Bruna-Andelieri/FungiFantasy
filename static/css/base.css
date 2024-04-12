@@ -3,6 +3,8 @@
     --black: black;
     --green: rgb(66, 81, 38);
     --purple: rgb(127, 12, 156);
+    --red: rgb(158, 0, 0);
+    --blue: rgb(0, 0, 163);
   }
 
 
@@ -18,6 +20,21 @@ body {
     font-family: 'Lato';
 }
 
+h3{
+    color: var(--purple);
+}
+
+
+.search-bar {
+    border: 2px solid var(--purple);
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+}
+
+
+.rating {
+    color: var(--purple)
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -52,38 +69,37 @@ body {
     -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
     -moz-box-shadow: 0px 0px 21px -5px var(--purple);
     box-shadow: 0px 0px 21px -5px var(--purple);
-    color: var(--purple) !important;
-    border: 2px solid var(--purple) !important;
 }
 
 .btn-outline-primary, .btn-black, .btn-outline-black {
     border-radius: var(--border-radius);
 }
 
+
+.btn-outline-primary {
+    background: var(--green) !important;
+    border: 2px solid var(--green) !important;
+    color: white !important;
+    opacity: 0.6 !important;
+    transition: 0.3s !important;
+}
+
+.btn-outline-primary:hover {
+    -webkit-box-shadow: 0px 0px 21px -5px var(--green);
+    -moz-box-shadow: 0px 0px 21px -5px var(--green);
+    box-shadow: 0px 0px 21px -5px var(--green);
+    border: 2px solid var(--green);
+    background-color: white !important;
+    color: var(--green) !important;
+}
+
 .btn-black {
-    background: var(--purple);
-    border: 2px solid var(--purple);
-    color: white;
-    opacity: 0.6;
-    transition: 0.3s;
+    background: var(--purple) !important;
+    border: 2px solid var(--purple) !important;
+    color: white !important;
+    opacity: 0.6 !important;
+    transition: 0.3s !important;
 }
-
-.link-green {
-    text-decoration: none  !important;
-    border: 1px solid white !important;
-    color: var(--purple) !important;
-    border-radius: var(--border-radius);
-    transition: 0.3s;
-}
-
-
-.link-green:hover {
-    border: 1px solid var(--purple) !important;
-    border-radius: var(--border-radius);
-    color: var(--purple) !important;
-
-}
-
 
 .btn-black:hover {
     -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
@@ -94,26 +110,77 @@ body {
     color: var(--purple) !important;
 }
 
+.link {
+    text-decoration: none  !important;
+    border: 1px solid white !important;
+    color: var(--purple) !important;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+
+.link:hover {
+    border: 1px solid var(--purple) !important;
+    border-radius: var(--border-radius);
+    color: var(--purple) !important;
+}
+
+
+.link-delete {
+    font-size: 16px !important;
+    text-decoration: none  !important;
+    border: 1px solid white !important;
+    color: var(--red) !important;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.link-delete:hover {
+    border: 1px solid var(--red) !important;
+    border-radius: var(--border-radius);
+    color: var(--red) !important;
+}
+
+.link-edit {
+    font-size: 16px !important;
+    text-decoration: none  !important;
+    border: 1px solid white !important;
+    color: var(--blue) !important;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.link-edit:hover {
+    border: 1px solid var(--blue) !important;
+    border-radius: var(--border-radius);
+    color: var(--blue) !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: var(--purple);
     color: white;
 }
 
 .text-black {
-    color: #000 !important;
+    color: var(--purple) !important;
 }
 
 .border-black {
     border: 1px solid black !important;
 }
 .bg-black {
-    background: #000 !important;
+    background-color: black;
+    -webkit-animation-name: freeDelivery;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 2s; 
+    transition: 0.3s;
 }
+
 
 .overlay {
 	height: 100%;
@@ -330,6 +397,12 @@ input[name='q']::placeholder {
     border: 2px solid var(--purple);
 }
 
+
+.product-details-container .price {
+    font-size: 40px;
+    color: var(--green);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -353,6 +426,14 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
+
+/* animations */
+@-webkit-keyframes freeDelivery {  
+    0% {background-color:var(--green);}
+    50% {background-color:var(--purple);}
+    100% {background-color:var(--green);}
+}
+
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {

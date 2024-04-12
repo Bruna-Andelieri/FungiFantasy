@@ -28,20 +28,23 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
+                    <div class=" p-2 row align-items-center justify-content-between">
+                        <h3 class="mb-0  p-2">{{ product.name }}</h3>
+                        {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a class="link-edit p-2" href="{% url 'edit_product' product.id %}">Edit</a>
+                             <a class="link-delete p-2" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </small>
+                    {% endif %}
+                    </div>
+                   
+                    <p class="price lead mb-0">€{{ product.price }}</p>
+                    {% if user.is_authenticated %}
                     <div class="my-2">
-                        {% if user.is_authenticated %}
-                        <a href="{% url 'add_to_wishlist' product.id %}" class="wishlist-btn p-2" data-product-id="{{ product.id }}">
+                        <a href="{% url 'add_to_wishlist' product.id %}" class="link p-2" data-product-id="{{ product.id }}">
                             Add to Wishlist<i class="fas fa-heart mx-2"></i>
                         </a>
-                        {% endif %}
                     </div>
-                    <p class="mb-0">{{ product.name }}</p>
-                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                    {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                        </small>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">

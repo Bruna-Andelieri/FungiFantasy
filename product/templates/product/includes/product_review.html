@@ -6,10 +6,10 @@
     {% if reviews %}
     <div>
         {% for review in reviews %}
-        <div class=" mt-3 p-4 review">
-            <div class="review-header d-flex flex-column flex-md-row justify-content-between">
+        <div class="mt-3 p-4 review">
+            <div class="review-header d-flex justify-content-between">
                 <h5 class="h5">{{ review.title }}</h5>
-                <div class="reviews__stars">
+                <div>
                     {% for _ in "12345" %}
                     {% if forloop.counter <= review.rating %}
                     <i class="fa fa-star fa-sm reviews_star"></i>
@@ -21,13 +21,15 @@
                 <p class="mt-2">{{ review.text }}</p>
             </div>
             <div class="review-footer d-flex justify-content-between align-items-center">
-                <div class="profile-details d-flex align-items-center">
-                    <div class="ml-3 profile-actions">
+                <div class="profile-details">
+                    <div class="ml-3">
                         <p class="m-0">{{ review.user.first_name }} {{ review.user.last_name|slice:":1" }}</p>
+                    </div>
+                    <div>
                         {% if request.user == review.user %}
-                        <a href="{% url 'edit_review' review.id %}" class="link-green p-2">Edit</a>
+                        <a href="{% url 'edit_review' review.id %}" class="link p-2">Edit</a>
                         <a href="{% url 'delete_review' review.id %}"
-                            class="link-green p-2">Delete</a>
+                            class="link p-2">Delete</a>
                         {% endif %}
                     </div>
                 </div>
