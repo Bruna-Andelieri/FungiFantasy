@@ -21,7 +21,7 @@ body {
 }
 
 h3{
-    color: var(--purple);
+    color: var(--purple) !important;
 }
 
 
@@ -62,6 +62,7 @@ h3{
     background: white;
     color: var(--purple) !important;
     border: 2px solid var(--purple) !important;
+    transition: 0.3s !important;
 }
 
 
@@ -154,6 +155,42 @@ h3{
     border: 1px solid var(--blue) !important;
     border-radius: var(--border-radius);
     color: var(--blue) !important;
+}
+
+
+.container-image {
+    overflow: hidden !important;
+    max-height: 200px !important;
+  }
+
+  .container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.card {
+    transition: 0.3s !important;
+}
+
+.card h4{
+    color: var(--purple) !important;
+}
+
+.card .price{
+    font-size: 30px;
+    font-weight:500;
+    color: var(--green) !important;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
+    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
+    box-shadow: 0px 0px 21px -5px var(--purple);
+}
+
+.custom-select {
+    border-radius: var(--border-radius);
 }
 
 .shop-now-button:hover,
