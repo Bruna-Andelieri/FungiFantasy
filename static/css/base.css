@@ -1,15 +1,20 @@
 :root {
     --border-radius: 25px;
     --black: black;
-    --green: rgb(66, 81, 38);
-    --purple: rgb(127, 12, 156);
+    --green: rgb(41, 17, 19);
+    --purple: rgb(150, 60, 70);
     --red: rgb(158, 0, 0);
     --blue: rgb(0, 0, 163);
+    --bege: rgb(253, 244, 231);
   }
 
 
 html {
     height: 100%;
+}
+
+.container-fluid {
+    background-color: var(--bege) !important;
 }
 
 body {
@@ -18,7 +23,18 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    
 }
+
+.banner {
+    color: var(--white) !important;
+}
+
+.banner h1{
+    padding: 20px;
+    text-shadow: 1px 1px 5px var(--black), -1px -1px 10px var(--purple), 0px 0px 50px black;
+}
+
 
 h3{
     color: var(--purple) !important;
@@ -59,17 +75,15 @@ h3{
 }
 
 .btn-outline-black {
-    background: white;
-    color: var(--purple) !important;
-    border: 2px solid var(--purple) !important;
+    background-color: var(--green);
+    color: white !important;
     transition: 0.3s !important;
+    opacity: 0.8;
 }
 
 
 .btn-outline-black:hover {
-    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
-    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
-    box-shadow: 0px 0px 21px -5px var(--purple);
+    opacity: 1;
 }
 
 .btn-outline-primary, .btn-black, .btn-outline-black {
@@ -96,19 +110,13 @@ h3{
 
 .btn-black {
     background: var(--purple) !important;
-    border: 2px solid var(--purple) !important;
     color: white !important;
-    opacity: 0.6 !important;
     transition: 0.3s !important;
+    opacity: 0.8;
 }
 
 .btn-black:hover {
-    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
-    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
-    box-shadow: 0px 0px 21px -5px var(--purple);
-    border: 2px solid var(--purple);
-    background-color: white !important;
-    color: var(--purple) !important;
+    opacity: 1;
 }
 
 .link {
@@ -130,31 +138,31 @@ h3{
 .link-delete {
     font-size: 16px !important;
     text-decoration: none  !important;
-    border: 1px solid white !important;
-    color: var(--red) !important;
+    background-color: var(--red) !important;
+    color: white;
     border-radius: var(--border-radius);
     transition: 0.3s;
+    opacity: 0.8;
 }
 
 .link-delete:hover {
-    border: 1px solid var(--red) !important;
-    border-radius: var(--border-radius);
-    color: var(--red) !important;
+    opacity: 1;
+    color: white;
 }
 
 .link-edit {
     font-size: 16px !important;
     text-decoration: none  !important;
-    border: 1px solid white !important;
-    color: var(--blue) !important;
+    background-color: var(--blue) !important;
+    color: white;
     border-radius: var(--border-radius);
     transition: 0.3s;
+    opacity: 0.8;
 }
 
 .link-edit:hover {
-    border: 1px solid var(--blue) !important;
-    border-radius: var(--border-radius);
-    color: var(--blue) !important;
+    opacity: 1;
+    color: white;
 }
 
 
@@ -170,7 +178,14 @@ h3{
   }
 
 .card {
+    background-color: var(--bege) !important;
     transition: 0.3s !important;
+    border-radius: var(--border-radius) !important; 
+}
+
+.card-img-top, .card-footer{
+    background-color: var(--bege) !important;
+    border-radius: var(--border-radius) !important;
 }
 
 .card h4{
@@ -178,7 +193,7 @@ h3{
 }
 
 .card .price{
-    font-size: 30px;
+    font-size: 20px;
     font-weight:500;
     color: var(--green) !important;
 }
@@ -214,7 +229,7 @@ h3{
     background-color: black;
     -webkit-animation-name: freeDelivery;  
     -webkit-animation-iteration-count: infinite;  
-    -webkit-animation-duration: 2s; 
+    -webkit-animation-duration: 3s; 
     transition: 0.3s;
 }
 
@@ -420,19 +435,13 @@ input[name='q']::placeholder {
 }
 
 .review {
-    color: var(--green) !important;
-    border: 2px solid var(--green);
+    background-color: white;
+    color: var(--purple) !important;
+    border: 2px solid var(--purple);
     border-radius: var(--border-radius);
-    opacity: 0.6;
-  transition: 0.3s;
 }
 
-.review:hover {
-    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
-    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
-    box-shadow: 0px 0px 21px -5px var(--purple);
-    border: 2px solid var(--purple);
-}
+
 
 
 .product-details-container .price {

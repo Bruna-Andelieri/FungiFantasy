@@ -27,9 +27,9 @@
                     </div>
                     <div>
                         {% if request.user == review.user %}
-                        <a href="{% url 'edit_review' review.id %}" class="link p-2">Edit</a>
+                        <a href="{% url 'edit_review' review.id %}" class="link-edit p-2">Edit</a>
                         <a href="{% url 'delete_review' review.id %}"
-                            class="link p-2">Delete</a>
+                            class="link-delete p-2">Delete</a>
                         {% endif %}
                     </div>
                 </div>

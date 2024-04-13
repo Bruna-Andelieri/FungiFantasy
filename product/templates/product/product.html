@@ -62,7 +62,7 @@
                                 <div class="card-footer bg-white  border-0">
                                     <div class="row align-items-center justify-content-between">
                                         
-                                            <p class="lead mb-0 text-left price p-3">€{{ product.price }}</p>
+                                            <p class="lead mb-0 text-left price px-3">€{{ product.price }}</p>
                                             {% if request.user.is_superuser %}
                                             <small class="ml-3">
                                                 <a class="link-edit p-2" href="{% url 'edit_product' product.id %}">Edit</a>
