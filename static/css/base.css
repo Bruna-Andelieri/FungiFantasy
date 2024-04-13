@@ -49,8 +49,21 @@ footer {
 }
 
 
-h3{
-    color: var(--purple) !important;
+hr {
+    background-color: var(--green);
+    opacity: 0.1;
+}
+
+h2, h5{
+    text-align: center;
+}
+
+h2 {
+    color: var(--green);
+}
+
+h5 {
+    color: var(--purple);
 }
 
 
@@ -106,9 +119,8 @@ h3{
 
 .btn-outline-primary {
     background: var(--green) !important;
-    border: 2px solid var(--green) !important;
     color: white !important;
-    opacity: 0.6 !important;
+    opacity: 0.8 !important;
     transition: 0.2s !important;
 }
 
@@ -116,20 +128,19 @@ h3{
     -webkit-box-shadow: 0px 0px 21px -5px var(--green);
     -moz-box-shadow: 0px 0px 21px -5px var(--green);
     box-shadow: 0px 0px 21px -5px var(--green);
-    border: 2px solid var(--green);
-    background-color: white !important;
     color: var(--green) !important;
+    opacity: 1 !important;
 }
 
 .btn-black {
     background: var(--purple) !important;
     color: white !important;
     transition: 0.2s !important;
-    opacity: 0.8;
+    opacity: 0.8 !important;
 }
 
 .btn-black:hover {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .link {
@@ -194,11 +205,29 @@ h3{
     background-color: var(--bege) !important;
     transition: 0.3s !important;
     border-radius: var(--border-radius) !important; 
+    border: 3px dotted var(--bege) !important;
+    
 }
+
+.card:hover {
+    /* -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
+    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
+    box-shadow: 0px 0px 21px -5px var(--purple); */
+    color: var(--purple) !important;
+    border: 3px dotted var(--purple);
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: inset 0px 0px 15px -7px var(--green);
+    -moz-box-shadow: inset 0px 0px 15px -7px var(--green);
+    box-shadow: inset 0px 0px 15px -7px var(--green);
+    border: 3px dotted var(--purple) !important;
+    transform: scale(1.02);
+}
+
 
 .card-img-top, .card-footer{
     background-color: var(--bege) !important;
     border-radius: var(--border-radius) !important;
+    
 }
 
 .card h4{
@@ -211,11 +240,6 @@ h3{
     color: var(--green) !important;
 }
 
-.card:hover {
-    -webkit-box-shadow: 0px 0px 21px -5px var(--purple);
-    -moz-box-shadow: 0px 0px 21px -5px var(--purple);
-    box-shadow: 0px 0px 21px -5px var(--purple);
-}
 
 .custom-select {
     border-radius: var(--border-radius);
@@ -228,7 +252,7 @@ h3{
 .btn-black:active,
 .btn-black:focus {
     background: var(--purple);
-    color: white;
+    opacity: 1;
 }
 
 .text-black {
@@ -372,20 +396,20 @@ input[name='q']::placeholder {
     color: #6c757d; /* text-secondary */
 }
 
-.allauth-form-inner-content input {
-    border-color: var(--purple);
+.allauth-form-inner-content input[type="text"],
+.allauth-form-inner-content input[type="number"],
+.allauth-form-inner-content textarea {
     border-radius: var(--border-radius);
+    border: 2px dotted var(--purple);
 }
 
-
-.allauth-form-inner-content textarea  {
-    border-color: var(--purple);
-    border-radius: var(--border-radius);
-}
 
 
 .allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
+    color: var(--purple);
+    padding-left: 15px;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 .allauth-form-inner-content input::placeholder {
@@ -404,8 +428,6 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -432,6 +454,7 @@ input[name='q']::placeholder {
 .btn-file {
     position: relative;
     overflow: hidden;
+    border-radius: var(--border-radius) !important;
 }
 
 .btn-file input[type="file"] {
@@ -443,6 +466,7 @@ input[name='q']::placeholder {
     opacity: 0;
     cursor: pointer;
 }
+
 
 .custom-checkbox .custom-control-label::before {
     border-radius: var(--border-radius);
@@ -456,8 +480,6 @@ input[name='q']::placeholder {
 }
 
 .review {
-    /* rgb(253, 244, 231) */
-    /* background-color: rgb(250, 253, 231); */
     color: var(--purple) !important;
     border: 3px dotted var(--purple);
     border-radius: var(--border-radius);
