@@ -74,6 +74,38 @@ h5 {
 }
 
 
+.list-group {
+    border: 3px dotted var(--purple);
+    border-radius: var(--border-radius);
+}
+.list-group-item {
+    margin: 10px 20px;
+    border: 0;
+    border-radius: 0px !important;
+    border-bottom: 3px dotted var(--purple);
+    background-color: var(--bege) !important;
+    padding: 10px;
+}
+
+.list-group-item:last-child {
+    border: 0;
+}
+
+.list-group-item img {
+    border-radius: var(--border-radius);
+}
+
+.list-group-item .wishlist-delete {
+    text-decoration: none !important;
+    color: var(--red);
+    opacity: 0.5 !important;
+    transition: 0.2s;
+}
+
+.list-group-item .wishlist-delete:hover {
+    opacity: 1 !important;
+}
+
 .rating {
     color: var(--purple)
 }
