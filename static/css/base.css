@@ -398,6 +398,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content input[type="text"],
 .allauth-form-inner-content input[type="number"],
+.allauth-form-inner-content input[type="email"],
 .allauth-form-inner-content textarea {
     border-radius: var(--border-radius);
     border: 2px dotted var(--purple);
