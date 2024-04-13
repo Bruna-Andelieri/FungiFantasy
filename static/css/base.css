@@ -71,6 +71,7 @@ h5 {
     border: 2px solid var(--purple);
     border-top-left-radius: var(--border-radius) !important;
     border-bottom-left-radius: var(--border-radius) !important;
+    opacity: 0.6;
 }
 
 
