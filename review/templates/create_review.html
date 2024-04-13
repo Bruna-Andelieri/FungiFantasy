@@ -12,12 +12,12 @@
 {% endblock %}
 
 {% block content %}
-<section class="container py-5" id="create-review-section">
+<section class="container>
   <div class="overlay"></div>
-  <div class="container-fluid">
+  <div class="container-fluid py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-6 col-lg-4">
-        <h2>Add review</h2>
+        <h3>Add review</h3>
         <div class="allauth-form-inner-content">
           <form method="POST" action="{% url 'create_review' product.id %}" class="form mb-2">
             {% csrf_token %}
@@ -39,7 +39,7 @@
               {% endfor %}
               <div class="text-right">
                 <a class="btn btn-outline-primary" href="{% url 'product_detail' product.id %}">Cancel</a>
-                <button class="btn btn-primary" type="submit">Add review</button>
+                <button class="btn btn-black" type="submit">Add review</button>
               </div>
           </form>
         </div>
