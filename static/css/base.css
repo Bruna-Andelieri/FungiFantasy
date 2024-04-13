@@ -438,13 +438,18 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input[type="number"],
 .allauth-form-inner-content input[type="email"],
 .allauth-form-inner-content textarea,
-#payment-form  input[type="text"],
-#payment-form  input[type="number"],
-#payment-form  input[type="email"],
-#payment-form  textarea,
-#payment-form select {
-    border-radius: var(--border-radius);
-    border: 2px dotted var(--purple);
+#payment-form input[type="text"],
+#payment-form input[type="number"],
+#payment-form input[type="email"],
+#payment-form textarea,
+#payment-form select,
+#profile-update-form input[type="text"],
+#profile-update-form input[type="number"],
+#profile-update-form input[type="email"],
+#profile-update-form textarea,
+#profile-update-form select {
+    border-radius: var(--border-radius)  !important;
+    border: 2px dotted var(--purple) !important;
 }
 
 #card-element {
