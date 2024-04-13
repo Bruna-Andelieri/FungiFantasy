@@ -437,7 +437,17 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input[type="text"],
 .allauth-form-inner-content input[type="number"],
 .allauth-form-inner-content input[type="email"],
-.allauth-form-inner-content textarea {
+.allauth-form-inner-content textarea,
+#payment-form  input[type="text"],
+#payment-form  input[type="number"],
+#payment-form  input[type="email"],
+#payment-form  textarea,
+#payment-form select {
+    border-radius: var(--border-radius);
+    border: 2px dotted var(--purple);
+}
+
+#card-element {
     border-radius: var(--border-radius);
     border: 2px dotted var(--purple);
 }
