@@ -17,7 +17,10 @@
   <div class="container-fluid py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-6 col-lg-4">
-        <h3>Add review</h3>
+        <hr>
+        <h2 class="logo-font mb-4">Review Management</h2>
+        <h5>Add a Review</h5>
+        <hr>
         <div class="allauth-form-inner-content">
           <form method="POST" action="{% url 'create_review' product.id %}" class="form mb-2">
             {% csrf_token %}
@@ -38,7 +41,7 @@
               {% endif %}
               {% endfor %}
               <div class="text-right">
-                <a class="btn btn-outline-primary" href="{% url 'product_detail' product.id %}">Cancel</a>
+                <a class="btn btn-outline-black" href="{% url 'product_detail' product.id %}">Cancel</a>
                 <button class="btn btn-black" type="submit">Add review</button>
               </div>
           </form>
