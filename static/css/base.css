@@ -611,6 +611,13 @@ input[name='q']::placeholder {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+    .logo-font {
+        font-size: 22px !important;
+    }
+
+    .shop-now-button {
+        min-width: 100px;
+    }
     .header-container {
         padding-top: 116px;
     }
