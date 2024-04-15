@@ -42,14 +42,47 @@ Please note that payments made using valid debit/credit cards will not be proces
 
 
  2. [ Features ](#)
- 3. [ Marketing ](#)  
+ 3. [ Marketing ](#marketing-and-seo)  
  4. [ Validatiton ](#) 
  5. [ Testing ](#testing)  
  6. [ Bug ](#bug)  
  7. [ Deployment](#deployment)
- 8. [ Tecnologies used](#)ok  
+ 8. [ Tecnologies used](#tecnologies-used)  
  9. [ Credits](#credits)
  10. [ Acknowledgements](#acknowledgements)  
+
+## Marketing and SEO
+
+#### Marketing
+
+- The Fungi Fantasy website also features a Facebook business page, enabling us to share content with customers and interact with them through comments and messages. You can [click here](https://www.facebook.com/profile.php?id=61558190435969) to visit the Fungi Fantasy Facebook Business Page.
+
+![Facebbok-page](docs/facebook-page.jpg)
+
+
+- The website also features a Mailchimp newsletter signup form, allowing us to gather email addresses for marketing purposes. You can find the newsletter form below:
+![Newsletter](docs/newsletter.jpg)
+
+#### SEO (Search Engine Optimization)
+
+
+Keywords relevant to Fungi Fantasy's business scope were meticulously researched, along with description tags. Wordtracker was employed to ensure the inclusion of both short-tail and long-tail keywords. Furthermore, product names and descriptions were carefully crafted to enhance visibility on search engines like Google. See below some of the words:
+
+- Mushrooms
+- Fairytale
+- Magical
+- Mistic
+- Decorative mushrooms
+- Garden decor
+- Outdoor accessories
+- Fairy garden decorations
+- Enchanted garden ornaments
+- Magical mushroom 
+
+To enhance the site's visibility, it have been created two essential files: sitemap.xml and robots.txt. These files play a crucial role in SEO (Search Engine Optimization). The sitemap.xml, generated with XML Sitemap, is located in the root folder, while the robots.txt guides search engine crawlers on accessing and crawling our site's pages.
+
+
+
 
 ## Deployment
 
@@ -321,3 +354,24 @@ You will now have a forked version of the repository in your GitHub account.
 - Git
 - GitHub
 - VsCode
+
+## Credits
+
+- [**Google Fonts**](https://fonts.google.com/)  - utilized for selecting the perfect typography
+- [**AWS**](https://aws.amazon.com/) - employed as a storage solution for static and media files
+- [**FavIcon.io**](https://favicon.io/favicon-converter/)  - utilized for compressing favicons
+- [**FreePik**](https://www.freepik.com/)  - serves as a database for images
+- [**Google Fonts**](https://fonts.google.com/)  - employed for selecting the best typography
+-  [**W3Schools**](https://www.w3schools.com/) - provides useful information and cheat sheets
+- [**Code Institute**](https://github.com/Code-Institute-Org>) Boutique Ado  walkthroughs
+- [**XML-Sitemaps.com**](https://www.xml-sitemaps.com/)  - utilized for generating XML sitemaps
+- [**Coolors**]((https://coolors.co/)) for color palette
+
+
+## Acknowledgements
+
+
+Completing this final project brings me immense joy...
+Code Institute has been an invaluable source of support and guidance throughout the development journey, from my mentor Rohit Sharma to the helpful Slack community, my cohort and colleagues.
+
+I owe a debt of gratitude to my partner, Ivan, whose coding expertise and unwavering belief in me have been instrumental in my journey into software development. His support has been crucial to the success and completion of this project, and I am truly thankful for his contributions.
