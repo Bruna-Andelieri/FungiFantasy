@@ -1,39 +1,77 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Fungi Fantasy
 
-Welcome,
+![responsive]()
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Fungi Fantasy is a comprehensive e-commerce platform offering enchanting garden decor. Users can explore and purchase a variety of decorative mushrooms, while also creating personal accounts to track orders and preferences. Administrators have full control to manage products, handle inquiries, and curate an immersive experience for garden enthusiasts.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
-## Codeanywhere Reminders
+You can view the live site at **[Fungi Fantasy](https://fungi-fantasy-4819ad1964c1.herokuapp.com/).**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 
-`python3 -m http.server`
+For testing purposes, you can utilize the following Stripe Dummy Card details:
+- Success Card Number: 4242 4242 4242 4242
+- Expiration Date: Enter any future date using the format MM/YY
+- CVV: Enter any 3-digit number
+- Postal Code: Enter any 5 numerical digits
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Please note that payments made using valid debit/credit cards will not be processed, and the card will not be charged. Additionally, no orders placed will be fulfilled.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
+## Table of contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+ 1. [ UX ](#ux)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+    **1.1 Strategy Plan**
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    - **1.1.1 Idea**
 
-To log into the Heroku toolbelt CLI:
+    - **1.1.2 Ideal User**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - **1.1.3 Site Goals**
+    
+    **1.2 Epics**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    **1.3 User Stories**
 
----
+    **1.4 Wireframes**
 
-Happy coding!
+    **1.5 Colors**
+
+    **1.6 Database Schema**
+
+
+
+ 2. [ Features ](#)
+ 3. [ Marketing ](#)  
+ 4. [ Validatiton ](#) 
+ 5. [ Testing ](#testing)  
+ 6. [ Bug ](#bug)  
+ 7. [ Deployment](#deployment)
+ 8. [ Tecnologies used](#content)  
+ 9. [ Credits](#credits)
+ 10. [ Acknowledgements](#acknowledgements)  
+
+
+
+
+## Tecnologies Used
+#### Languages
+
+- HTML
+- CSS
+- JavaScript
+- Python 
+
+#### Frameworks and Libraries
+
+- Django
+- Bootstrap
+- jQuery
+- Stripe
+
+#### Development and Deploy
+
+- Heroku
+- Git
+- GitHub
+- VsCode
