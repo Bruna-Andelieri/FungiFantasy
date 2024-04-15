@@ -22,6 +22,7 @@ body {
     background-color: var(--bege) !important;
     background: url('/media/hero-banner.jpg') no-repeat center center fixed;
     background-size: cover;
+    resize: horizontal !important;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
