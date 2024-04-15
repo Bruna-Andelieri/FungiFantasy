@@ -20,14 +20,6 @@ Please note that payments made using valid debit/credit cards will not be proces
 ## Table of contents
 
  1. [ UX ](#ux)
-
-    **1.1 Strategy Plan**
-
-    - **1.1.1 Idea**
-
-    - **1.1.2 Ideal User**
-
-    - **1.1.3 Site Goals**
     
     **1.2 Epics**
 
@@ -50,6 +42,25 @@ Please note that payments made using valid debit/credit cards will not be proces
  8. [ Tecnologies used](#tecnologies-used)  
  9. [ Credits](#credits)
  10. [ Acknowledgements](#acknowledgements)  
+
+## UX User Experience
+
+### Overview
+
+The purpose of the Fungi Fantasy website is to provide a user-friendly online shop where visitors can explore a variety of products sorted into categories. In addition to browsing product details, users can also view comments and ratings left by other customers to make informed decisions about their purchases.
+
+### customer objectives
+
+At Fungi Fantasy, customers enjoy a seamless and intuitive shopping journey, where they're inspired to discover extraordinary products to turn their garden into a whimsical fairy tale. Registering an account with Fungi Fantasy grants access to various user features, such as rating or commenting on purchased products. Plus, subscribers receive a monthly newsletter with updates on new arrivals, trends, and cupons.
+
+### Site goals
+
+- Provide users with the convenience of online shopping from the comfort of their home at Fungi Fantasy.
+- Allow users to peruse comments from other shoppers regarding products.
+- Enable users to add items to their Wishlist for future consideration.
+- Empower users to view comprehensive details of each item in the shop, including price, and description.
+- Admin Dashboard for business owners. It helps you manage your products, you can quickly make any changes you need.
+
 
 ## Marketing and SEO
 
