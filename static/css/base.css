@@ -437,6 +437,7 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input[type="number"],
 .allauth-form-inner-content input[type="email"],
 .allauth-form-inner-content textarea,
+.allauth-form-inner-content input[type="password"],   
 #payment-form input[type="text"],
 #payment-form input[type="number"],
 #payment-form input[type="email"],
