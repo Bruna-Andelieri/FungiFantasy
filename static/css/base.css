@@ -136,13 +136,13 @@ h5 {
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: var(--white);
     min-width: 260px;
 }
 
 .btn-outline-black {
     background-color: var(--green);
-    color: white !important;
+    color: var(--white) !important;
     transition: 0.3s !important;
     opacity: 0.8;
 }
@@ -159,7 +159,7 @@ h5 {
 
 .btn-outline-primary {
     background: var(--green) !important;
-    color: white !important;
+    color: var(--white) !important;
     opacity: 0.8 !important;
     transition: 0.2s !important;
 }
@@ -174,7 +174,7 @@ h5 {
 
 .btn-black {
     background: var(--purple) !important;
-    color: white !important;
+    color: var(--white) !important;
     transition: 0.2s !important;
     opacity: 0.8 !important;
 }
@@ -203,7 +203,7 @@ h5 {
     font-size: 16px !important;
     text-decoration: none  !important;
     background-color: var(--red) !important;
-    color: white;
+    color: var(--white);
     border-radius: var(--border-radius);
     transition: 0.3s;
     opacity: 0.8;
@@ -211,14 +211,14 @@ h5 {
 
 .link-delete:hover {
     opacity: 1;
-    color: white;
+    color: var(--white);
 }
 
 .link-edit {
     font-size: 16px !important;
     text-decoration: none  !important;
     background-color: var(--blue) !important;
-    color: white;
+    color: var(--white);
     border-radius: var(--border-radius);
     transition: 0.3s;
     opacity: 0.8;
@@ -226,7 +226,7 @@ h5 {
 
 .link-edit:hover {
     opacity: 1;
-    color: white;
+    color: var(--white);
 }
 
 
@@ -314,7 +314,7 @@ h5 {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background:var(--bege);
 	z-index: -1;
 }
 
