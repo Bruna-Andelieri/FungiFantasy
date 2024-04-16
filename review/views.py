@@ -71,7 +71,7 @@ def create_review(request, item_id):
 
 @login_required
 def edit_review(request, review_id):
-    review = Review.objects.get(id=review_id)
+    review = get_object_or_404(Review, id=review_id, user=request.user)
     product = review.product
     form = ReviewForm(initial={
         'title': review.title,
@@ -102,7 +102,7 @@ def edit_review(request, review_id):
 
 @login_required
 def delete_review(request, review_id):
-    review = Review.objects.get(id=review_id)
+    review = get_object_or_404(Review, id=review_id, user=request.user)
     product = review.product
     
     if request.method == 'GET':
