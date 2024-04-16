@@ -76,6 +76,7 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <!-- PRODUCTS -->
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -98,8 +99,17 @@
                         </div>
                     </li>
 
+                    <!-- CONTACT -->
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="{% url 'contact' %}">
+                            <div class="text-center">
+                                <div><i class="fas fa-comment fa-lg"></i></div>
+                                <p class="my-0">Contact</p>
+                            </div>
+                        </a>
+                    </li>
 
-
+                    <!-- WISHLIST -->
                     <li class="list-inline-item">
                         {% if request.user.is_authenticated %}
                         <a class="text-black nav-link" href="{% url 'view_wishlist' %}">
@@ -117,6 +127,8 @@
                         </a>
                         {% endif %}
                     </li>
+
+                    <!-- CART -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_cart' %}">
@@ -133,6 +145,10 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                
             </div>
         </div>
         <div class="row bg-white">
