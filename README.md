@@ -2,7 +2,7 @@
 
 ![responsive](docs/mockup_responsive.jpg)
 
-Fungi Fantasy is a comprehensive e-commerce platform offering enchanting garden decor. Users can explore and purchase a variety of decorative mushrooms, while also creating personal accounts to track orders and preferences. Administrators have full control to manage products, handle inquiries, and curate an immersive experience for garden enthusiasts.
+Fungi Fantasy is a comprehensive e-commerce platform offering enchanting garden decor. Users can explore and purchase a variety of decorative mushrooms, while also creating personal accounts to track orders and preferences. Administrators have full control to manage products, handling inquiries, and curate an immersive experience for garden enthusiasts.
 
 
 You can view the live site at **[Fungi Fantasy](https://fungi-fantasy-4819ad1964c1.herokuapp.com/).**
@@ -46,11 +46,11 @@ The purpose of the Fungi Fantasy website is to provide a user-friendly online sh
 
 ### Customer objectives
 
-At Fungi Fantasy, customers enjoy a seamless and intuitive shopping journey, where they're inspired to discover extraordinary products to turn their garden into a whimsical fairy tale. Registering an account with Fungi Fantasy grants access to various user features, such as rating or commenting on purchased products. Plus, subscribers receive a monthly newsletter with updates on new arrivals, trends, and cupons.
+At Fungi Fantasy, customers enjoy a seamless and intuitive shopping journey, where they're inspired to discover extraordinary products to turn their garden into a whimsical fairy tale. Registering an account with Fungi Fantasy grants access to various user features, such as rating or commenting on purchased products. Plus, subscribers receive a monthly newsletter with updates on new arrivals, trends, and coupons.
 
 ### Site goals
 
-- Provide users with the convenience of online shopping from the comfort of their home at Fungi Fantasy.
+- Provide users with the convenience of online shopping from the comfort of their homes at Fungi Fantasy.
 - Allow users to peruse comments from other shoppers regarding products.
 - Enable users to add items to their Wishlist for future consideration.
 - Empower users to view comprehensive details of each item in the shop, including price, and description.
@@ -67,10 +67,10 @@ List of the EPICS and user stories
 - As a customer, I have visibility and functionality of the navigation bar to navigate across the site.
 - As a customer, I can input text into the search bar to locate a specific item.
 - As a visitor, I can register to the website and create an account so that I can save my details and become a customer
-- As a customer logged-in, I can update my details within my account to ensure they remain current
+- As a customer logged in, I can update my details within my account to ensure they remain current
 - As a customer, I can save my username and password so that I can easily access my details.
-- As a visitor I can click on the external links so that I can view relevant information.
-- As a visitor, I can enter my email to the newsletter field so that I can receive relevant news about the website.
+- As a visitor, I can click on the external links so that I can view relevant information.
+- As a visitor, I can enter my email into the newsletter field so that I can receive relevant news about the website.
 - 
 
 **EPIC: PRODUCTS AND SHOPPING CART CHECK OUT**
@@ -93,12 +93,17 @@ List of the EPICS and user stories
 - As a visitor, I can enter my details on the Contact form so that I can send a message to the company.
 - As a user logged in after the purchase I can write a review about the product.
 - As a user logged in after the purchase I can rate the product purchased.
-- As a logged-in user, I can click the 'Add to Wishlist' button to save my favorite items for future reference.
+- As a logged-in user, I can click the 'Add to Wishlist' button to save my favourite items for future reference.
 - As a logged-in user, I can click the 'Remove' icon next to an item on my Wishlist to delete that product.
 
 **EPIC: TESTING AND DOCUMENTATION**
 - As a developer, I conduct comprehensive testing across all aspects of my project to ensure users have a seamless experience devoid of errors.
 - As a developer, I document all project information in my README.md to provide comprehensive documentation for myself and others.
+
+## Features
+
+#### Entity Relationship Diagram
+The Entity Relationship Diagram (ERD) was generated using Database Designer (for Android), providing a visual representation of the database structure. It illustrates the tables, their respective columns, and the relationships between them. The following is the ERD derived from my planning:
 
 
 ## Marketing and SEO
@@ -141,11 +146,11 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 | **click on "All products"** to **explore all items available on the website.**                                               | Passed |   ✅   |   ✅    |
   **create an account** to **access personalised features and save my preferences**.                                           | Passed |   ✅   |   ✅    |  
 | **click on a navbar** to **select a specific method for searching for an item**                                              | Passed |   ✅   |   ✅    |
-| **log into my account** to **access my personal settings and history, or prefill my details at checkout**.                   | Passed |   ✅   |   ✅    |   
-| **log out of my account** to **ensure my account is secure when I'm not using it**.                                          | Passed |   ✅   |   ✅    |   
+| **Log into my account** to **access my settings and history, or prefill my details at checkout**.                            | Passed |   ✅   |   ✅    |   
+| **Log out of my account** to **ensure my account is secure when I'm not using it**.                                          | Passed |   ✅   |   ✅    |   
 | **update my account/profile** to **keep my personal information up to date for checking out**.                               | Passed |   ✅   |   ✅    |   
 | **delete my account** to **remove my personal data from the platform**.                                                      | Passed |   ✅   |   ✅    |   
-| **access and view my user profile** to **see my personal information, order history, and manage my account settings**.       | Passed |   ✅   |   ✅    |   
+| **Access and view my user profile** to **see my personal information, order history, and manage my account settings**.       | Passed |   ✅   |   ✅    |   
 | **view a summary of my orders** to **keep track of my purchases** (as a **registered customer**).                            | Passed |   ✅   |   ✅    |   
 | **add products to a wishlist** to **save them for future consideration or purchase**.                                        | Passed |   ✅   |   ✅    |  
 | **create new products** to **offer more choices to customers** (as a **admin**).                                             | Passed |   ✅   |   ✅    |   
@@ -158,7 +163,7 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 | **create reviews for products** to **share my experience with others** (as a **logged-in customer**).                        | Passed |   ✅   |   ✅    |   
 | **update my reviews** to **modify my feedback if my opinion changes** (as a **logged-in customer**).                         | Passed |   ✅   |   ✅    |   
 | **delete my reviews** to **remove my feedback if I no longer wish it to be displayed** (as a **logged-in**).                 | Passed |   ✅   |   ✅    |   
-| **enter my details on the Contact form** to **send a message to the company**.                                               | Passed |   ✅   |   ✅    |                                
+| **Enter my details on the Contact form** to **send a message to the company**.                                               | Passed |   ✅   |   ✅    |                                
 
 
 
@@ -175,7 +180,7 @@ Specify a name for your database (typically the project name, such as "Fungi-Fan
 - Choose the Tiny Turtle (Free) plan.
 - You can opt to leave the Tags field empty.
 - Select the nearest Region and Data Center.
-A- fter creation, access your database by clicking on its name, where you'll find the database URL and Password.
+- After creation, access your database by clicking on its name, where you'll find the database URL and Password.
 
 ### Amazon AWS
 This project utilizes  [AWS](https://aws.amazon.com) for storing media and static files online, as Heroku does not retain this data type.
@@ -396,7 +401,7 @@ A local clone of this repository can be made on GitHub. Please follow the below 
 - Click on this button and choose your clone method from HTTPS, SSH, or GitHub CLI, copy the URL to your clipboard by clicking the 'Copy' button.
 - Open your Git Bash Terminal.
 - Change the current working directory to the location you want the cloned directory to be made.
-- Type git clone and paste in the copied URL from step above.
+- Type git clone and paste in the copied URL from the step above.
 - Press 'Enter' for the local clone to be created.
 - Use the **pip3 install -r requirements.txt** command to install the dependencies and libraries needed for Fungi Fantasy.
 - Set up your env.py file and gather the PostgreSQL URL from ElephantSQL, if applicable, and add your SECRET_KEY and STRIPE/AWS keys if using these services.
