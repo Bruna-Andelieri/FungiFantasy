@@ -61,19 +61,54 @@ At Fungi Fantasy, customers enjoy a seamless and intuitive shopping journey, whe
 - Empower users to view comprehensive details of each item in the shop, including price, and description.
 - Admin Dashboard for business owners. It helps you manage your products, you can quickly make any changes you need.
 
-### EPICS
+### Epics and User Stories
 
 In planning our strategy at Fungi Fantasy, we developed 5 main goals, called EPICS, to guide our project. You can find the detailed list of these epics and their links in our project's [Kanban Board](https://github.com/users/Bruna-Andelieri/projects/3). From these epics, we broke down into smaller tasks, called user stories, to make sure we cover everything we need.
 
-List of the EPICS:
+List of the EPICS and user stories
 
-- EPIC: VIEW WEBSITE AND USER ACCOUNT
-- EPIC: PRODUCTS AND SHOPPING CART CHECK OUT
-- EPIC: ADMIN MANAGEMENT
-- EPIC CUSTOM MODELS
-- EPIC: TESTING AND DOCUMENTATION
+**EPIC: VIEW WEBSITE AND USER ACCOUNT**
+- As a customer, I can view the site's home page so that I can comprehend the site's objectives and purpose
+- As a customer, I have visibility and functionality of the navigation bar to navigate across the site.
+- As a customer, I can input text into the search bar to locate a specific item.
+- As a visitor, I can register to the website and create an account so that I can save my details and become a customer
+- As a customer logged-in, I can update my details within my account to ensure they remain current
+- As a customer, I can save my username and password so that I can easily access my details.
+- As a visitor I can click on the external links so that I can view relevant information.
+- As a visitor, I can enter my email to the newsletter field so that I can receive relevant news about the website.
+- 
 
-### USER STORIES
+**EPIC: PRODUCTS AND SHOPPING CART CHECK OUT**
+- As a customer, I can click on "All products" so that I can explore all items available on the website.
+- As a customer, I can click on a navbar to select a specific method for searching for an item.
+- As a customer, I can select an individual product so that I can view its description, price, etc.
+- As a customer, I can click on 'Add to Cart' in my product views so that I can add the product to my cart.
+- As a customer, I can increase/decrease/remove quantities of a product in my cart so that I can have control over what I wish to purchase.
+- As a customer, I can securely check out my products to finalize my purchase.
+- As a customer, I can receive an email post-purchase to confirm my order and maintain a record of my purchase.
+- As a customer logged in I can see my order history so that I can track my spending and details of purchase
+
+**EPIC: ADMIN MANAGEMENT**
+- As an admin, I can log in to the admin panel so that I can manage/see the panel.
+- As an admin, I can add edit, or delete products so that I can update the website's products page.
+- As an admin, I want to view an order so that I can review what customers are purchasing.
+
+**EPIC CUSTOM MODELS**
+- As an admin, I can view the inquiries submitted via the contact form to respond to customer queries.
+- As a visitor, I can enter my details on the Contact form so that I can send a message to the company.
+- As a visitor, I can enter my details on the Contact form so that I can send a message to the company.
+- As a user logged in after the purchase I can write a review about the product.
+- As a user logged in after the purchase I can rate the product purchased.
+- As a logged-in user, I can click the 'Add to Wishlist' button to save my favorite items for future reference.
+- As a logged-in user, I can click the 'Remove' icon next to an item on my Wishlist to delete that product.
+
+**EPIC: TESTING AND DOCUMENTATION**
+- As a developer, I conduct comprehensive testing across all aspects of my project to ensure users have a seamless experience devoid of errors.
+- As a developer, I document all project information in my README.md to provide comprehensive documentation for myself and others.
+
+
+
+
 
 ## Marketing and SEO
 
