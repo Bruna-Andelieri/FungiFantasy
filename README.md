@@ -21,10 +21,6 @@ Please note that payments made using valid debit/credit cards will not be proces
 
  1. [ UX ](#ux)
     
-    **1.2 Epics**
-
-    **1.3 User Stories**
-
     **1.4 Wireframes**
 
     **1.5 Colors**
@@ -32,11 +28,10 @@ Please note that payments made using valid debit/credit cards will not be proces
     **1.6 Database Schema**
 
 
-
  2. [ Features ](#)
  3. [ Marketing ](#marketing-and-seo)  
  4. [ Validatiton ](#) 
- 5. [ Testing ](#testing)  
+ 5. [ Manual Testing ](#testing)  
  6. [ Bug ](#bug)  
  7. [ Deployment](#deployment)
  8. [ Tecnologies used](#tecnologies-used)  
@@ -96,7 +91,6 @@ List of the EPICS and user stories
 **EPIC CUSTOM MODELS**
 - As an admin, I can view the inquiries submitted via the contact form to respond to customer queries.
 - As a visitor, I can enter my details on the Contact form so that I can send a message to the company.
-- As a visitor, I can enter my details on the Contact form so that I can send a message to the company.
 - As a user logged in after the purchase I can write a review about the product.
 - As a user logged in after the purchase I can rate the product purchased.
 - As a logged-in user, I can click the 'Add to Wishlist' button to save my favorite items for future reference.
@@ -105,9 +99,6 @@ List of the EPICS and user stories
 **EPIC: TESTING AND DOCUMENTATION**
 - As a developer, I conduct comprehensive testing across all aspects of my project to ensure users have a seamless experience devoid of errors.
 - As a developer, I document all project information in my README.md to provide comprehensive documentation for myself and others.
-
-
-
 
 
 ## Marketing and SEO
@@ -139,6 +130,35 @@ Keywords relevant to Fungi Fantasy's business scope were meticulously researched
 - Magical mushroom 
 
 To enhance the site's visibility, it have been created two essential files: sitemap.xml and robots.txt. These files play a crucial role in SEO (Search Engine Optimization). The sitemap.xml, generated with XML Sitemap, is located in the root folder, while the robots.txt guides search engine crawlers on accessing and crawling our site's pages.
+
+## Manual Testing
+
+
+I conducted manual testing based on my user stories. For a test to pass, it must meet the acceptance criteria. I performed the tests on Google Chrome and Mozilla Firefox.
+
+| User story - As a user, I can...                                                                                             | Notes  | Chrome | Firefox | 
+| ---------------------------------------------------------------------------------------------------------------------------- | ------ | :----: | :-----: | 
+| **click on "All products"** to **explore all items available on the website.**                                               | Passed |   ✅   |   ✅    |
+  **create an account** to **access personalised features and save my preferences**.                                           | Passed |   ✅   |   ✅    |  
+| **click on a navbar** to **select a specific method for searching for an item**                                              | Passed |   ✅   |   ✅    |
+| **log into my account** to **access my personal settings and history, or prefill my details at checkout**.                   | Passed |   ✅   |   ✅    |   
+| **log out of my account** to **ensure my account is secure when I'm not using it**.                                          | Passed |   ✅   |   ✅    |   
+| **update my account/profile** to **keep my personal information up to date for checking out**.                               | Passed |   ✅   |   ✅    |   
+| **delete my account** to **remove my personal data from the platform**.                                                      | Passed |   ✅   |   ✅    |   
+| **access and view my user profile** to **see my personal information, order history, and manage my account settings**.       | Passed |   ✅   |   ✅    |   
+| **view a summary of my orders** to **keep track of my purchases** (as a **registered customer**).                            | Passed |   ✅   |   ✅    |   
+| **add products to a wishlist** to **save them for future consideration or purchase**.                                        | Passed |   ✅   |   ✅    |  
+| **create new products** to **offer more choices to customers** (as a **admin**).                                             | Passed |   ✅   |   ✅    |   
+| **update product details** to **ensure all information about the products is current and accurate** (as a **admin**).        | Passed |   ✅   |   ✅    |   
+| **delete products** to **remove items that are no longer available or relevant** (as a **admin**).                           | Passed |   ✅   |   ✅    |   
+| **add products to my cart** to **purchase them** (as a **customer**).                                                        | Passed |   ✅   |   ✅    |   
+| **remove products from my cart** to **manage items before finalizing my purchase** (as a **customer**).                      | Passed |   ✅   |   ✅    |   
+| **see an order summary in the cart** to **review my order before completing the purchase** (as a **customer**).              | Passed |   ✅   |   ✅    |   
+| **complete the checkout process and pay** to **finalise my order** (as a **customer**).                                      | Passed |   ✅   |   ✅    |   
+| **create reviews for products** to **share my experience with others** (as a **logged-in customer**).                        | Passed |   ✅   |   ✅    |   
+| **update my reviews** to **modify my feedback if my opinion changes** (as a **logged-in customer**).                         | Passed |   ✅   |   ✅    |   
+| **delete my reviews** to **remove my feedback if I no longer wish it to be displayed** (as a **logged-in**).                 | Passed |   ✅   |   ✅    |   
+| **enter my details on the Contact form** to **send a message to the company**.                                               | Passed |   ✅   |   ✅    |                                
 
 
 
