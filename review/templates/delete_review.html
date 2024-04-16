@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="overlay"></div>
+  <div class="container-fluid py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <hr>
+        <h2 class="logo-font mb-4">Review Management</h2>
+        <h5>Delete a review</h5>
+        <hr>
+        <div class="allauth-form-inner-content">
+            <p class="text-center">Are You Sure?</p>
+          <form method="POST" action="{% url 'delete_review' review.id %}" class="form mb-2">
+            {% csrf_token %}
+            {% for field in form %}
+            {% if field.name == 'rating' %}
+            <div class="form-group">
+              <label for="{{ field.id_for_label }}">Rating *</label>
+              <div class="rating mb-3">
+                {% for i in "01234" %}
+
+                <i class="fa-{% if review.rating < i|add:1 %}regular{% else %}solid{% endif %} fa-star fa-xl"
+                  data-value="{{ i|add:1 }}"></i>
+                {% endfor %}
+                <input type="hidden" name="rating" id="rating" value="{{review.rating}}" >
+              </div>
+              {% else %}
+              {{ field|as_crispy_field }}
+              {% endif %}
+              {% endfor %}
+              <div class="text-right">
+                <a class="btn btn-outline-black" href="{% url 'product_detail' product.id %}">Cancel</a>
+                <button class="btn btn-black" type="submit">Delete review</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block post_load_js %}
+{{ block.super }}
+{% endblock %}

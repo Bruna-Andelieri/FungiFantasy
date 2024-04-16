@@ -104,7 +104,26 @@ def edit_review(request, review_id):
 def delete_review(request, review_id):
     review = Review.objects.get(id=review_id)
     product = review.product
-    review.delete()
+    
+    if request.method == 'GET':
+        form = ReviewForm(initial={
+            'title': review.title,
+            'text': review.text,
+            'rating': review.rating
+        }, block_fields=True)
+        context = {
+            'product': product,
+            'form': form,
+            'review': review,
+        }
 
-    messages.success(request, "Your review has been deleted.")
-    return redirect('product_detail', product.id)
+        return render(request, 'delete_review.html', context)
+
+    if request.method == 'POST':
+        review.delete()
+
+        messages.success(request, "Your review has been deleted.")
+        return redirect('product_detail', product.id)
+
+
+
