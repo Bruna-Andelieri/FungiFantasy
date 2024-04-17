@@ -78,7 +78,7 @@
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <!-- ACCOUNTS -->
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        <a class="text-black nav-link" href="#" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
@@ -260,7 +260,7 @@
 
 
                 <!-- Section: Links  -->
-                <section class="">
+                <section>
                     <div class="container text-center text-md-start mt-5">
                         <!-- Grid row -->
                         <div class="row mt-3">
@@ -314,7 +314,7 @@
                                         class="me-4 text-reset">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://instagram.com" target="_blank" rel="noopener"" class=" me-4
+                                    <a href="https://instagram.com" target="_blank" rel="noopener" class=" me-4
                                         text-reset">
                                         <i class="fab fa-instagram"></i>
                                     </a>
@@ -331,7 +331,7 @@
                 <!-- Section: Links  -->
 
                 <!-- Copyright -->
-                <div class="text-center p-4"">
+                <div class="text-center p-4">
                     © 2024 Copyright:
                     <a class=" text-reset fw-bold" href="https://github.com/Bruna-Andelieri">Bruna Andelieri</a>
                 </div>
@@ -342,12 +342,12 @@
     <!-- Footer -->
 
     {% block postloadjs %}
-    <script type="text/javascript">
+     <script>
         $('.toast').toast('show');
     </script>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <script
-        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        >(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     </div>
     {% endblock %}
 
