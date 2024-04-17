@@ -6,22 +6,22 @@ from profiles.models import UserProfile
 from product.models import Product
 
 
-class Wishlist(models.Model): 
+class Wishlist(models.Model):
     """
     A Wishlist model for users to keep track of their favourite products
     """
+
     user = models.ForeignKey(
-        UserProfile, 
+        UserProfile,
         on_delete=models.CASCADE,
-        null=False, 
+        null=False,
         blank=False,
-        related_name='user_wishlist')
-    
+        related_name="user_wishlist",
+    )
+
     product = models.ForeignKey(
-        Product, 
-        null=False, 
-        blank=False,
-        on_delete=models.CASCADE)
+        Product, null=False, blank=False, on_delete=models.CASCADE
+    )
 
     def __str__(self):
         return self.product.name

@@ -10,8 +10,7 @@ class ReviewForm(forms.Form):
         super(ReviewForm, self).__init__(*args, **kwargs)
         if block_fields:
             for field in self.fields:
-                self.fields[field].widget.attrs['readonly'] = True
+                self.fields[field].widget.attrs["readonly"] = True
 
-        
         for field_name, field in self.fields.items():
-            field.widget.attrs['placeholder'] = f"{field_name} here ..."
+            field.widget.attrs["placeholder"] = f"{field_name} here ..."

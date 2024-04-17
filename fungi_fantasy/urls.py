@@ -20,17 +20,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
-    path('', include('home.urls')),
-    path('product/', include('product.urls')),
-    path('cart/', include('cart.urls')),
-    path('checkout/', include('checkout.urls')),
-    path('profile/', include('profiles.urls')),
-    path('contact/', include('contact.urls')),
-    path('wishlist/', include('wishlist.urls')),
-    path('review/', include('review.urls')),
+    path("admin/", admin.site.urls),
+    path("accounts/", include("allauth.urls")),
+    path("", include("home.urls")),
+    path("product/", include("product.urls")),
+    path("cart/", include("cart.urls")),
+    path("checkout/", include("checkout.urls")),
+    path("profile/", include("profiles.urls")),
+    path("contact/", include("contact.urls")),
+    path("wishlist/", include("wishlist.urls")),
+    path("review/", include("review.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'fungi_fantasy.views.handler404'
-handler500 = 'fungi_fantasy.views.handler500'
+handler404 = "fungi_fantasy.views.handler404"
+handler500 = "fungi_fantasy.views.handler500"

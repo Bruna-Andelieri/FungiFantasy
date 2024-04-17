@@ -10,14 +10,17 @@ from product.models import Product
 
 class Review(models.Model):
     product = models.ForeignKey(
-        Product, null=False, blank=False, on_delete=models.CASCADE)
+        Product, null=False, blank=False, on_delete=models.CASCADE
+    )
     user = models.ForeignKey(
-        User, null=False, blank=False, on_delete=models.CASCADE)
+        User, null=False, blank=False, on_delete=models.CASCADE
+    )
     title = models.CharField(max_length=200)
     text = models.TextField(
-        validators=[MinLengthValidator(
-            50, "Review must be greater than 50 characters")],
-        max_length=400
+        validators=[
+            MinLengthValidator(50, "Review must be greater than 50 characters")
+        ],
+        max_length=400,
     )
     rating = models.IntegerField()
 
@@ -25,8 +28,8 @@ class Review(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        unique_together = [['product', 'user']]
-        ordering = ['-created_at']
+        unique_together = [["product", "user"]]
+        ordering = ["-created_at"]
 
     def __str__(self):
         return self.title

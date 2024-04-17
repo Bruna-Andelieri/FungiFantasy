@@ -5,6 +5,7 @@ class Product(models.Model):
     """
     The Product model represents a product in the store.
     """
+
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
