@@ -222,6 +222,10 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 
   ![black](docs/black-validator.jpg)
 
+### Lighthouse
+- I conducted Lighthouse testing in Incognito mode to obtain optimal results.
+![lighthouse](docs/lighthouse.jpg)
+
 ## Deployment
 
 ### ElephantSQL Database
