@@ -131,7 +131,12 @@ I've drafted wireframes for the primary pages of the website using [Balsamiq](ht
   - Empowers users to modify their details and preferences conveniently. The form comes pre-populated with their current information for ease of adjustment.
   ![profile](docs/my-profile.jpg)
 
-  
+### Color pallete
+
+The color palette chosen for the ecommerce platform is inspired by the enchanting world of mushrooms and fungi, creating a whimsical and immersive shopping experience with a dash of vintage and modern colors.
+  ![colors](docs/color-pallette.jpg)
+
+
 ## Features
 
 #### Entity Relationship Diagram
