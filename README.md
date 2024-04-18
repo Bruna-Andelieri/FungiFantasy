@@ -24,10 +24,6 @@ Please note that payments made using valid debit/credit cards will not be proces
     **1.4 Wireframes**
 
     **1.5 Colors**
-
-    **1.6 Database Schema**
-
-
  2. [ Features ](#)
  3. [ Marketing ](#marketing-and-seo)  
  4. [ Validatiton ](#) 
@@ -100,10 +96,47 @@ List of the EPICS and user stories
 - As a developer, I conduct comprehensive testing across all aspects of my project to ensure users have a seamless experience devoid of errors.
 - As a developer, I document all project information in my README.md to provide comprehensive documentation for myself and others.
 
+#### Wire-frames
+
+
+I've drafted wireframes for the primary pages of the website using [Balsamiq](https://balsamiq.com/). Below are the wireframes for the main pages:
+
+- Landing Page - Header and Footer
+  - Consistent Header and Footer: Each page incorporates a consistent header at the top and a footer positioned at the bottom. This ensures that the header remains visible without obstructing any content, while the footer is always accessible.
+  The landing page serves to provide users with a clear overview of the page's purpose as contact, useful links...
+ 
+    ![landing](docs/landing-page.jpg)
+
+ - Products page:
+   - The products page offers users a comprehensive selection of all available products. Users can easily identify item names and prices.
+    ![products](docs/product-page.jpg)
+
+- Prdoucts detail:
+  - Users can easily identify item names, prices, comment counts and ratings.
+  ![products-details](docs/product-detail.jpg)
+
+- Wishlist
+  - This feature enables users to save items to their Wishlist for future purchase or trend monitoring. Accessible exclusively to logged-in users.
+  ![wishlist](docs/wishlits.jpg)
+
+- Shopping Cart
+  - This page acts as the final review before checkout. Users can adjust the quantity of items previously added to their cart, remove specific items, or clear the entire cart altogether.
+  ![shopping-cart](docs/shopping-cart.jpg)
+
+- Checkout
+  - Users are prompted to input delivery details, which are pre-filled if the user is logged in and details are saved, and  complete payment using the credit card details field.
+  ![checkout](docs/checkout.jpg)
+
+- My Profile
+  - Empowers users to modify their details and preferences conveniently. The form comes pre-populated with their current information for ease of adjustment.
+  ![profile](docs/my-profile.jpg)
+
+  
 ## Features
 
 #### Entity Relationship Diagram
 The Entity Relationship Diagram (ERD) was generated using Database Designer (for Android), providing a visual representation of the database structure. It illustrates the tables, their respective columns, and the relationships between them. The following is the ERD derived from my planning:
+![Entity](docs/Entity-relationship-diagram.jpg)
 
 
 ## Marketing and SEO
