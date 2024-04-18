@@ -20,10 +20,6 @@ Please note that payments made using valid debit/credit cards will not be proces
 ## Table of contents
 
  1. [ UX ](#ux)
-    
-    **1.4 Wireframes**
-
-    **1.5 Colors**
  2. [ Features ](#)
  3. [ Marketing ](#marketing-and-seo)  
  4. [ Validatiton ](#) 
