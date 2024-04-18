@@ -204,7 +204,23 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 | **Enter my details on the Contact form** to **send a message to the company**.                                               | Passed |   ✅   |   ✅    |                                
 
 
+## Validation
 
+#### HTML
+- I use the [W3C Markup Validation Service](https://validator.w3.org/) to validate my HTML code.
+![html-validator](docs/html-validator.jpg)
+
+#### CSS
+- I use the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate my CSS code.
+![css-validator](docs/css-validator.jpg)
+
+### Python
+- I validated the Python files I created or edited using [CI Python Linter](https://pep8ci.herokuapp.com/#).
+![python-validator](docs/python-validator.jpg)
+
+- Due to the amount of python files in my project, I've installed [black](https://pypi.org/project/black/) in my terminal for Python and Django testing purposes.
+
+  ![black](docs/black-validator.jpg)
 
 ## Deployment
 
