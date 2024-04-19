@@ -232,6 +232,16 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
  ![order](docs/feat-order-details.jpg)
  ![order-email](docs/feat-order-email.jpg)
 
+### Account
+
+Django AllAuth offers Fungi Fantasy a robust and customizable authentication system, ensuring the security of user data. When a customer wishes to register an account, they can input their username, email, and password (entered twice for accuracy). After submitting the form, the user will receive an email to verify their email address and then proceed to sign in to Fungi Fantasy. 
+
+![account](docs/feat-register.jpg)
+
+  - Once registered, you can simply use your username and password to log in to the website.
+![account-sign-in](docs/feat-signin.jpg)
+![account-success](docs/feat-success-sigin.jpg)
+
 
 
     
