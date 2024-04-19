@@ -244,17 +244,6 @@ Django AllAuth offers Fungi Fantasy a robust and customizable authentication sys
 
 
 
-    
-    
-
-
-
-
-
-
-
-
-
 ### Entity Relationship Diagram
 The Entity Relationship Diagram (ERD) was generated using Database Designer (for Android), providing a visual representation of the database structure. It illustrates the tables, their respective columns, and the relationships between them. The following is the ERD derived from my planning:
 ![Entity](docs/Entity-relationship-diagram.jpg)
@@ -330,6 +319,11 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 #### CSS
 - I use the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate my CSS code.
 ![css-validator](docs/css-validator.jpg)
+
+#### Java Script
+- I used [JSHint](https://jshint.com/) to validate my JavaScript code.
+![js-validator](docs/js-validator.jpg)
+
 
 ### Python
 - I validated the Python files I created or edited using [CI Python Linter](https://pep8ci.herokuapp.com/#).
