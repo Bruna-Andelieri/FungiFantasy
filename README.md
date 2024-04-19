@@ -219,6 +219,18 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
  ![add-wishlist](docs/feat-add-wishlist.jpg)
  ![wishlist](docs/feat-wishlist.jpg)
 
+ ### Cart
+ 
+ - The cart feature empowers users to review their orders before proceeding to the checkout page. Users can conveniently adjust the quantity of items in their cart, remove specific items, or clear the Vault entirely. These functionalities are accessible to both logged-in and guest users. Once satisfied with the Vault contents, users can seamlessly proceed to checkout.
+ ![add-cart](docs/feat-add-to-cart.jpg)
+ ![cart](docs/feat-cart.jpg)
+ 
+  - **Checkout**
+
+    Once you've filled in all the required details and completed the payment, you will receive an order confirmation via email or you can also review your order in your profile.
+ ![checkout](docs/feat-checkout.jpg)
+ ![order](docs/feat-order-details.jpg)
+ ![order-email](docs/feat-order-email.jpg)
 
 
 
