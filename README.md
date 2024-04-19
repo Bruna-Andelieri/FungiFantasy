@@ -337,6 +337,27 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 - I conducted Lighthouse testing in Incognito mode to obtain optimal results.
 ![lighthouse](docs/lighthouse.jpg)
 
+## Bug
+
+Throughout the development process, the following bug was identified:
+  - User not able to Update the cart, the click event was working but it did not display the expected results.
+  
+  My code:
+  ```
+  $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+  }
+  ```
+  I changed to this and worked it.
+
+  ```
+  $('.update-link').on('click', function () {
+            var form = $(this).closest('tr').find('.update-form');
+            form.submit();
+  }
+  ```
+
 ## Deployment
 
 ### ElephantSQL Database
