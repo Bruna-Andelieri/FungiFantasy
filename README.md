@@ -135,14 +135,46 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
 
 ## Features
 
-#### Entity Relationship Diagram
+### Viewing Options - Visitors/Registered
+
+| Feature   | Visitor           | Registered, Account Holder |
+|-----------|-------------------|----------------------------|
+| Home Page | Visible           | Visible                    |
+| Account   | Not Visible - 'Account' option only appears for registered logged-in users                 | Visible and full feature interaction available |
+| All Products  | Visable - items can be viewed and added to Cart | Visible and full feature interaction available |
+| Wishlist  | Not visible       | Visible and full feature interaction available|
+| Review   | Visible, not interaction(del/edit)| Visible and full feature interaction available|
+| Read   | Visible | Visible |
+| Search  | Visible | Visible |
+| Contact Us/Newsletter | Visible | Visible |
+| Admin Dashboard | Not Visible | Only visible to Admin |
+
+### CRUD (Create, Read, Update, and Delete)
+
+| Feature | Create | Read | Update | Delete |
+|---------|--------|------|--------|--------|
+| Account | On registration | Yes, delivery details and order history | Yes, update address | No, users are unable to delete their accounts, this is restricted to Admin |
+| Cart | Yes, customers may add to their cart | Yes | Yes, items can be added/removed | Yes |
+| Products | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
+| Review | Yes, customers can add a comment and rating after purchasing the product  | Yes, all users | Yes, the customer who wrote the review |  Yes, the customer who wrote the review |
+
+
+### Features used in every HTML template
+
+- Header:
+  The header consists of a Logo section, which also serves as a link to the Home page . The center of the header features a Search Bar, while the Menu section, along with Cart and Wishlist options, is located in the top easy navigation across all pages. 
+
+
+
+
+### Entity Relationship Diagram
 The Entity Relationship Diagram (ERD) was generated using Database Designer (for Android), providing a visual representation of the database structure. It illustrates the tables, their respective columns, and the relationships between them. The following is the ERD derived from my planning:
 ![Entity](docs/Entity-relationship-diagram.jpg)
 
 
 ## Marketing and SEO
 
-#### Marketing
+### Marketing
 
 - The Fungi Fantasy website also features a Facebook business page, enabling us to share content with customers and interact with them through comments and messages. You can [click here](https://www.facebook.com/profile.php?id=61558190435969) to visit the Fungi Fantasy Facebook Business Page.
 
@@ -152,7 +184,7 @@ The Entity Relationship Diagram (ERD) was generated using Database Designer (for
 - The website also features a Mailchimp newsletter signup form, allowing us to gather email addresses for marketing purposes. You can find the newsletter form below:
 ![Newsletter](docs/newsletter.jpg)
 
-#### SEO (Search Engine Optimization)
+### SEO (Search Engine Optimization)
 
 
 Keywords relevant to Fungi Fantasy's business scope were meticulously researched, along with description tags. Wordtracker was employed to ensure the inclusion of both short-tail and long-tail keywords. Furthermore, product names and descriptions were carefully crafted to enhance visibility on search engines like Google. See below some of the words:
