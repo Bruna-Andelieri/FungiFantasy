@@ -4,6 +4,9 @@ from .models import Contact
 
 # Create your views here.
 def index(request):
+    """
+    View to handle the submission of a contact form.
+    """
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")

@@ -5,6 +5,10 @@ from product.models import Product
 
 
 def cart_contents(request):
+    """
+    Function to retrieve and calculate the contents 
+    of the user's shopping cart. 
+    """
     cart_items = []
     total = 0
     product_count = 0

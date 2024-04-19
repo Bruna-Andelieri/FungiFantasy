@@ -12,6 +12,12 @@ from .forms import ReviewForm
 
 @login_required
 def create_review(request, item_id):
+    """
+    This view allows users to create a review on a product page. 
+    The review is generated using the form data and then stored in 
+    the database. It's accessible exclusively to logged-in users
+    who have purchased the product.
+    """ 
     product = get_object_or_404(Product, pk=item_id)
     user = UserProfile.objects.get(user=request.user)
     orders = user.orders.all()
@@ -73,6 +79,11 @@ def create_review(request, item_id):
 
 @login_required
 def edit_review(request, review_id):
+    """
+    This view enables editing of a review. The review is fetched from the 
+    database, and the form is pre-filled with the existing review data.
+    After editing, the updated review is saved to the database.
+    """
     review = get_object_or_404(Review, id=review_id, user=request.user)
     product = review.product
     form = ReviewForm(
@@ -106,6 +117,10 @@ def edit_review(request, review_id):
 
 @login_required
 def delete_review(request, review_id):
+    """
+    This view handles the deletion of a review. It retrieves the 
+    review from the database and proceeds to delete it.
+    """
     review = get_object_or_404(Review, id=review_id, user=request.user)
     product = review.product
 
