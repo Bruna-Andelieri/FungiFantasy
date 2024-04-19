@@ -161,8 +161,58 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
 
 ### Features used in every HTML template
 
-- Header:
-  The header consists of a Logo section, which also serves as a link to the Home page . The center of the header features a Search Bar, while the Menu section, along with Cart and Wishlist options, is located in the top easy navigation across all pages. 
+- **Header**:
+  The header consists of a Logo section, which also serves as a link to the Home page . The center of the header features a Search Bar, while the Menu section, along with Cart and Wishlist options, is located in the top easy navigation across all pages.
+  ![header](docs/feat-header.jpg) 
+  
+- **Logged in**
+  When logged in, the wishlist appears in a distinct color and is clickable.
+  ![header-logged](docs/feat-header-logged.jpg)
+
+- **Footer**
+  The footer is a valuable resource for users to connect and engage further. Featuring prominently in the footer is a direct link to our Facebook page, providing a convenient avenue for users to stay updated with our latest news and offerings. Additionally, we provide essential contact details, a link to a contact form is also included, enabling users to submit queries directly through our website and a newsletter for future news.
+  ![footer](docs/feat-footer.jpg)
+
+### Landing Page
+  The landing page features a captivating image designed to immediately capture visitors' attention. Additionally, the shop button is prominently displayed and easily accessible, ensuring users can quickly find and browse through all available products.
+  ![landing](docs/feat-landing-page.jpg)
+
+### Products
+  - The product page displays simplicity, showcasing only the image, price, and name of the item.
+  ![products](docs/feat-products.jpg)
+
+  - **Product page as Admin**
+    - If you're an admin or staff member, you'll have access to buttons to edit or delete products.
+    ![admin-edit](docs/feat-managment.jpg)
+
+  - **Product details:**
+    Clicking on a specific product allows you to access its details and reviews.
+    ![product-detail](docs/feat-product-detail.jpg)
+
+  - **Product details as a logged in customer**
+    
+    - When logged in, you'll find the button to add a review visible on the page.
+    ![add-review-button](docs/feat-add-review-button.jpg)
+
+    - And when clicked, you will be directed to a page where you can read and submit reviews. After that, if you're not satisfied with the review, you can edit it and submit the updated version.
+    ![add-review](docs/feat-add-review.jpg)
+    
+    - When you click on a specific product, you can view its details. If you've previously purchased this product , you can add a review and rate. Attempting to add a review without purchasing it will result in an error message.
+    ![product-detail-logged](docs/feat-error-review.jpg)
+
+    - **Product detais page as Admin**
+     - As an administrator, you have the ability to edit existing products or add new ones.
+     ![product-edit](docs/feat-edit-product.jpg)
+     ![product-add](docs/feat-add-product.jpg)
+
+
+    
+    
+
+
+
+
+
 
 
 
@@ -170,6 +220,7 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
 ### Entity Relationship Diagram
 The Entity Relationship Diagram (ERD) was generated using Database Designer (for Android), providing a visual representation of the database structure. It illustrates the tables, their respective columns, and the relationships between them. The following is the ERD derived from my planning:
 ![Entity](docs/Entity-relationship-diagram.jpg)
+
 
 
 ## Marketing and SEO
