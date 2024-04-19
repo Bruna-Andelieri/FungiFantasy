@@ -17,8 +17,11 @@
             <div class="col-12 col-md-6 col-lg-6">
                 <hr>
                 <h2 class="logo-font mb-4">Wishlist</h2>
-                <a href="{% url 'product' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="text-uppercase">add mushroomns!</span>
+                <a href="{% url 'product' %}" class="btn btn-outline-black mt-5">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Add more mushrooms!</span>
                 </a>
                 <hr>
                 {% if wishlist_items %}
