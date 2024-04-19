@@ -177,6 +177,14 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
   The landing page features a captivating image designed to immediately capture visitors' attention. Additionally, the shop button is prominently displayed and easily accessible, ensuring users can quickly find and browse through all available products.
   ![landing](docs/feat-landing-page.jpg)
 
+### About us
+  The About Us page includes a dedicated section that provides detailed information about our company.
+  ![about](docs/feat-about.jpg)
+
+### Contact Form
+  The contact form on our website serves as a convenient and efficient way for visitors to get in touch with us. With user-friendly fields for name, email and message, it's easy for individuals to reach out with questions, feedback, or inquiries.
+  ![contact](docs/feat-contact.jpg)
+
 ### Products
   - The product page displays simplicity, showcasing only the image, price, and name of the item.
   ![products](docs/feat-products.jpg)
@@ -204,6 +212,14 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
      - As an administrator, you have the ability to edit existing products or add new ones.
      ![product-edit](docs/feat-edit-product.jpg)
      ![product-add](docs/feat-add-product.jpg)
+
+  ### Wishlist
+
+  - The Wishlist feature is exclusively accessible to logged-in users. Users have the capability to review all items they've ever added to their Wishlist. Users have the option to remove individual items from their Wishlist. Additionally, they can click on a button to add more mushrooms, which redirects them to the products page, where they can explore and add additional items to their Wishlist.
+ ![add-wishlist](docs/feat-add-wishlist.jpg)
+ ![wishlist](docs/feat-wishlist.jpg)
+
+
 
 
     
