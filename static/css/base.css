@@ -1,8 +1,8 @@
 :root {
     --border-radius: 25px;
     --black: black;
-    --green: rgb(41, 17, 19);
-    --purple: rgb(150, 60, 70);
+    --brown: rgb(41, 17, 19);
+    --rose: rgb(150, 60, 70);
     --red: #dc3545;
     --blue: #17a2b8;
     --bege: rgb(253, 244, 231);
@@ -30,7 +30,7 @@ body {
 }
 
 footer {
-    background-color: var(--green) !important; 
+    background-color: var(--brown) !important; 
     color: var(--bege) !important; 
     padding: 20px !important;
 }
@@ -46,12 +46,12 @@ footer {
 
 .banner h1{
     padding: 20px;
-    text-shadow: 1px 1px 5px var(--black), -1px -1px 10px var(--purple), 0px 0px 50px black;
+    text-shadow: 1px 1px 5px var(--black), -1px -1px 10px var(--rose), 0px 0px 50px black;
 }
 
 
 hr {
-    background-color: var(--green);
+    background-color: var(--brown);
     opacity: 0.1;
 }
 
@@ -60,16 +60,16 @@ h2, h5{
 }
 
 h2 {
-    color: var(--green);
+    color: var(--brown);
 }
 
 h5 {
-    color: var(--purple);
+    color: var(--rose);
 }
 
 
 .search-bar {
-    border: 2px solid var(--purple);
+    border: 2px solid var(--rose);
     border-top-left-radius: var(--border-radius) !important;
     border-bottom-left-radius: var(--border-radius) !important;
     opacity: 0.6;
@@ -77,14 +77,14 @@ h5 {
 
 
 .list-group {
-    border: 3px dotted var(--purple);
+    border: 3px dotted var(--rose);
     border-radius: var(--border-radius);
 }
 .list-group-item, .cart-product {
     margin: 10px 20px;
     border: 0;
     border-radius: 0px !important;
-    border-bottom: 3px dotted var(--purple);
+    border-bottom: 3px dotted var(--rose);
     background-color: var(--bege) !important;
     padding: 10px;
 }
@@ -115,7 +115,7 @@ h5 {
 
 
 .rating {
-    color: var(--purple)
+    color: var(--rose)
 }
 /* from Bulma */
 .icon {
@@ -141,7 +141,7 @@ h5 {
 }
 
 .btn-outline-black {
-    background-color: var(--green);
+    background-color: var(--brown);
     color: var(--white) !important;
     transition: 0.3s !important;
     opacity: 0.8;
@@ -158,22 +158,22 @@ h5 {
 
 
 .btn-outline-primary {
-    background: var(--green) !important;
+    background: var(--brown) !important;
     color: var(--white) !important;
     opacity: 0.8 !important;
     transition: 0.2s !important;
 }
 
 .btn-outline-primary:hover {
-    -webkit-box-shadow: 0px 0px 21px -5px var(--green);
-    -moz-box-shadow: 0px 0px 21px -5px var(--green);
-    box-shadow: 0px 0px 21px -5px var(--green);
-    color: var(--green) !important;
+    -webkit-box-shadow: 0px 0px 21px -5px var(--brown);
+    -moz-box-shadow: 0px 0px 21px -5px var(--brown);
+    box-shadow: 0px 0px 21px -5px var(--brown);
+    color: var(--brown) !important;
     opacity: 1 !important;
 }
 
 .btn-black {
-    background: var(--purple) !important;
+    background: var(--rose) !important;
     color: var(--white) !important;
     transition: 0.2s !important;
     opacity: 0.8 !important;
@@ -185,17 +185,17 @@ h5 {
 
 .link {
     text-decoration: none  !important;
-    border: 1px solid var(--purple) !important;
-    color: var(--purple) !important;
+    border: 1px solid var(--rose) !important;
+    color: var(--rose) !important;
     border-radius: var(--border-radius);
     transition: 0.3s;
 }
 
 
 .link:hover {
-    border: 1px solid var(--green) !important;
+    border: 1px solid var(--brown) !important;
     border-radius: var(--border-radius);
-    color: var(--green) !important;
+    color: var(--brown) !important;
 }
 
 
@@ -250,13 +250,13 @@ h5 {
 }
 
 .card:hover {
-    color: var(--purple) !important;
-    border: 3px dotted var(--purple);
+    color: var(--rose) !important;
+    border: 3px dotted var(--rose);
     border-radius: var(--border-radius);
-    -webkit-box-shadow: inset 0px 0px 15px -7px var(--purple);
-    -moz-box-shadow: inset 0px 0px 15px -7px var(--purple);
-    box-shadow: inset 0px 0px 15px -7px var(--purple);
-    border: 3px dotted var(--purple) !important;
+    -webkit-box-shadow: inset 0px 0px 15px -7px var(--rose);
+    -moz-box-shadow: inset 0px 0px 15px -7px var(--rose);
+    box-shadow: inset 0px 0px 15px -7px var(--rose);
+    border: 3px dotted var(--rose) !important;
     transform: scale(1.02);
 }
 
@@ -268,13 +268,13 @@ h5 {
 }
 
 .card h4{
-    color: var(--purple) !important;
+    color: var(--rose) !important;
 }
 
 .card .price{
     font-size: 20px;
     font-weight:500;
-    color: var(--green) !important;
+    color: var(--brown) !important;
 }
 
 
@@ -288,12 +288,12 @@ h5 {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: var(--purple);
+    background: var(--rose);
     opacity: 1;
 }
 
 .text-black {
-    color: var(--purple) !important;
+    color: var(--rose) !important;
 }
 
 .border-black {
@@ -449,18 +449,18 @@ input[name='q']::placeholder {
 #profile-update-form textarea,
 #profile-update-form select {
     border-radius: var(--border-radius)  !important;
-    border: 2px dotted var(--purple) !important;
+    border: 2px dotted var(--rose) !important;
 }
 
 #card-element {
     border-radius: var(--border-radius);
-    border: 2px dotted var(--purple);
+    border: 2px dotted var(--rose);
 }
 
 
 
 .allauth-form-inner-content label:not([for='id_remember']) {
-    color: var(--purple);
+    color: var(--rose);
     padding-left: 15px;
     padding-bottom: 0;
     margin: 0;
@@ -494,8 +494,8 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: var(--purple);
-    border-color: var(--purple);
+    background-color: var(--rose);
+    border-color: var(--rose);
     opacity: 0.6;
 }
 
@@ -534,12 +534,12 @@ input[name='q']::placeholder {
 }
 
 .review {
-    color: var(--purple) !important;
-    border: 3px dotted var(--purple);
+    color: var(--rose) !important;
+    border: 3px dotted var(--rose);
     border-radius: var(--border-radius);
-    -webkit-box-shadow: inset 0px 0px 15px -7px var(--green);
-    -moz-box-shadow: inset 0px 0px 15px -7px var(--green);
-    box-shadow: inset 0px 0px 15px -7px var(--green);
+    -webkit-box-shadow: inset 0px 0px 15px -7px var(--brown);
+    -moz-box-shadow: inset 0px 0px 15px -7px var(--brown);
+    box-shadow: inset 0px 0px 15px -7px var(--brown);
 }
 
 
@@ -547,7 +547,7 @@ input[name='q']::placeholder {
 
 .product-details-container .price {
     font-size: 40px;
-    color: var(--green);
+    color: var(--brown);
 }
 
 #mc_embed_signup {
@@ -569,7 +569,7 @@ input[name='q']::placeholder {
     width: 100px;
     color: var(--white);
 
-    background-color: var(--purple);
+    background-color: var(--rose);
     border: 0;
     border-radius: var(--border-radius);
 }
@@ -577,9 +577,9 @@ input[name='q']::placeholder {
 /* -------------------------------- Animations */
 
 @-webkit-keyframes freeDelivery {  
-    0% {background-color:var(--green);}
-    50% {background-color:var(--purple);}
-    100% {background-color:var(--green);}
+    0% {background-color:var(--brown);}
+    50% {background-color:var(--rose);}
+    100% {background-color:var(--brown);}
 }
 
 
