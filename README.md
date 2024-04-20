@@ -42,7 +42,7 @@ Please note that payments made using valid debit/credit cards will not be proces
   * [Validation](#validation)
     * [HTML](#html)
     * [CSS](#css)
-    * [JavaScript](#java-script)
+    * [JavaScript](#javascript)
     * [Python](#python)
     * [Lighthouse](#lighthouse)
 
@@ -127,7 +127,9 @@ List of the EPICS and user stories
 - As a developer, I conduct comprehensive testing across all aspects of my project to ensure users have a seamless experience devoid of errors.
 - As a developer, I document all project information in my README.md to provide comprehensive documentation for myself and others.
 
-#### Wireframes
+[Back to the top](#fungi-fantasy)
+
+### Wireframes
 
 
 I've drafted wireframes for the primary pages of the website using [Balsamiq](https://balsamiq.com/). Below are the wireframes for the main pages:
@@ -167,7 +169,7 @@ I've drafted wireframes for the primary pages of the website using [Balsamiq](ht
 The color palette chosen for the ecommerce platform is inspired by the enchanting world of mushrooms and fungi, creating a whimsical and immersive shopping experience with a dash of vintage and modern colors.
   ![colors](docs/color-pallette.jpg)
 
-
+[Back to the top](#fungi-fantasy)
 ## Features
 
 ### Viewing Options - Visitors/Registered
@@ -193,6 +195,8 @@ The color palette chosen for the ecommerce platform is inspired by the enchantin
 | Products | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
 | Review | Yes, customers can add a comment and rating after purchasing the product  | Yes, all users | Yes, the customer who wrote the review |  Yes, the customer who wrote the review |
 
+
+[Back to the top](#fungi-fantasy)
 
 ### Features used in every HTML template
 
@@ -277,13 +281,14 @@ Django AllAuth offers Fungi Fantasy a robust and customizable authentication sys
 ![account-sign-in](docs/feat-signin.jpg)
 ![account-success](docs/feat-success-sigin.jpg)
 
-
+[Back to the top](#fungi-fantasy)
 
 ### Entity Relationship Diagram
 The Entity Relationship Diagram (ERD) was generated using Database Designer (for Android), providing a visual representation of the database structure. It illustrates the tables, their respective columns, and the relationships between them. The following is the ERD derived from my planning:
 ![Entity](docs/Entity-relationship-diagram.jpg)
 
 
+[Back to the top](#fungi-fantasy)
 
 ## Marketing and SEO
 
@@ -315,6 +320,8 @@ Keywords relevant to Fungi Fantasy's business scope were meticulously researched
 
 To enhance the site's visibility, it have been created two essential files: sitemap.xml and robots.txt. These files play a crucial role in SEO (Search Engine Optimization). The sitemap.xml, generated with XML Sitemap, is located in the root folder, while the robots.txt guides search engine crawlers on accessing and crawling our site's pages.
 
+[Back to the top](#fungi-fantasy)
+
 ## Manual Testing
 
 
@@ -344,6 +351,7 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 | **delete my reviews** to **remove my feedback if I no longer wish it to be displayed** (as a **logged-in**).                 | Passed |   ✅   |   ✅    |   
 | **Enter my details on the Contact form** to **send a message to the company**.                                               | Passed |   ✅   |   ✅    |                                
 
+[Back to the top](#fungi-fantasy)
 
 ## Validation
 
@@ -372,6 +380,8 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 - I conducted Lighthouse testing in Incognito mode to obtain optimal results.
 ![lighthouse](docs/lighthouse.jpg)
 
+[Back to the top](#fungi-fantasy)
+
 ## Bug
 
 Throughout the development process, the following bug was identified:
@@ -396,6 +406,7 @@ Throughout the development process, the following bug was identified:
 ## Deployment
 
 ### ElephantSQL Database
+
 This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
 
 To create your Postgres Database, simply sign up with your GitHub account and follow these steps:
@@ -642,6 +653,8 @@ You can create a copy of the original repository on GitHub by following these st
 
 You will now have a forked version of the repository in your GitHub account. 
 
+[Back to the top](#fungi-fantasy)
+
 ## Tecnologies Used
 #### Languages
 
@@ -684,3 +697,5 @@ Completing this final project brings me immense joy...
 Code Institute has been an invaluable source of support and guidance throughout the development journey, from my mentor Rohit Sharma to the helpful Slack community, my cohort and colleagues.
 
 I owe a debt of gratitude to my partner, Ivan, whose coding expertise and unwavering belief in me have been instrumental in my journey into software development. His support has been crucial to the success and completion of this project, and I am truly thankful for his contributions.
+
+[Back to the top](#fungi-fantasy)
