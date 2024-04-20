@@ -19,16 +19,51 @@ Please note that payments made using valid debit/credit cards will not be proces
 
 ## Table of contents
 
- 1. [ UX ](#ux)
- 2. [ Features ](#)
- 3. [ Marketing ](#marketing-and-seo)  
- 4. [ Validatiton ](#) 
- 5. [ Manual Testing ](#testing)  
- 6. [ Bug ](#bug)  
- 7. [ Deployment](#deployment)
- 8. [ Tecnologies used](#tecnologies-used)  
- 9. [ Credits](#credits)
- 10. [ Acknowledgements](#acknowledgements)  
+  * [UX](#ux-user-experience)
+    * [Overview](#overview)
+    * [Customer objectives](#customer-objectives)
+    * [Site goals](#site-goals)
+    * [Epics and User Stories](#epics-and-user-stories)
+    * [Wireframes](#wireframes)
+    * [Color pallette](#color-pallete)
+
+  * [Features](#features)
+    * [Viewing Options](#viewing-options---visitorsregistered)
+    * [CRUD](#crud-create-read-update-and-delete)
+    * [Features HTML](#features-used-in-every-html-template)
+    * [Entity Relationship Diagram](#entity-relationship-diagram)
+
+  * [Marketing](#marketing-and-seo)
+    * [Marketing](#marketing)
+    * [SEO](#seo-search-engine-optimization)
+
+  * [Manual Testing](#manual-testing)
+
+  * [Validation](#validation)
+    * [HTML](#html)
+    * [CSS](#css)
+    * [JavaScript](#java-script)
+    * [Python](#python)
+    * [Lighthouse](#lighthouse)
+
+  * [Bug](#bug)  
+  * [Deployment](#deployment)
+    * [ElephantSQL Database](#elephantsql-database)
+    * [Amazon AWS](#amazon-aws)
+    * [Stripe API](#stripe-api)
+    * [Gmail API](#gmail-api)
+    * [Heroku](#heroku)
+    * [Cloning Project](#cloning-project)
+    * [Forking Project](#forking-project)
+
+  * [Tecnologies used](#tecnologies-used)
+    * [Languages](#languages) 
+    * [Frameworks and Libraries](#frameworks-and-libraries)
+    * [Developmen and Deploy](#development-and-deploy)
+
+  * [Credits](#credits)
+
+  * [Acknowledgements](#acknowledgements)  
 
 ## UX User Experience
 
@@ -92,7 +127,7 @@ List of the EPICS and user stories
 - As a developer, I conduct comprehensive testing across all aspects of my project to ensure users have a seamless experience devoid of errors.
 - As a developer, I document all project information in my README.md to provide comprehensive documentation for myself and others.
 
-#### Wire-frames
+#### Wireframes
 
 
 I've drafted wireframes for the primary pages of the website using [Balsamiq](https://balsamiq.com/). Below are the wireframes for the main pages:
@@ -320,7 +355,7 @@ I conducted manual testing based on my user stories. For a test to pass, it must
 - I use the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate my CSS code.
 ![css-validator](docs/css-validator.jpg)
 
-#### Java Script
+#### JavaScript
 - I used [JSHint](https://jshint.com/) to validate my JavaScript code.
 ![js-validator](docs/js-validator.jpg)
 
